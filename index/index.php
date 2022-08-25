@@ -47,7 +47,7 @@ fclose($fp);
 <meta property="og:locale" content="ja_JP" />
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@NLC_update" />
+<meta name="twitter:site" content="@pe_hu_" />
 <meta name="twitter:image" content="https://creative-community.space/value/icon.png" />
 
 <link rel="icon" href="https://creative-community.space/value/icon.png">
