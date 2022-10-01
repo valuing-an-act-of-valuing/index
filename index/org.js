@@ -1,10 +1,10 @@
-$(function() {
-  $(".label").click(function() {
+$(function () {
+  $(".label").click(function () {
     $("#org li").removeClass("list_toggle");
   });
   if ($("#org li").hasClass("list_toggle")) {
-    $(".reset-button").click(function() {
-    $("#org li").removeClass("is-hide");
+    $(".reset-button").click(function () {
+      $("#org li").removeClass("is-hide");
     });
   }
 });
@@ -13,8 +13,8 @@ var searchBox = ".search-box";
 var listItem = ".list_item";
 var hideClass = "is-hide";
 
-$(function() {
-  $(document).on("change", searchBox + " input", function() {
+$(function () {
+  $(document).on("change", searchBox + " input", function () {
     search_filter();
   });
 });
@@ -45,7 +45,7 @@ function search_filter() {
 
 function get_selected_input_items(name) {
   var searchData = [];
-  $("[name=" + name + "]:checked").each(function() {
+  $("[name=" + name + "]:checked").each(function () {
     searchData.push($(this).val());
   });
   return searchData;
