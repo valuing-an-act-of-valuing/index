@@ -87,7 +87,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="org.js"></script>
-  
+
   <script type="text/javascript">
   function shuffleContent(container) {
     var content = container.find("> *");
@@ -101,7 +101,7 @@
   });
   </script>
 
-  <a id="update" href="/value/update/">
+  <a id="update" href="/value/index/">
     <?php
     $mod = filemtime("index.json");
     date_default_timezone_set('Asia/Tokyo');
