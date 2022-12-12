@@ -13,7 +13,7 @@
       "url" : "/motto/",
       "info" : "MOTTO | ペフの由来と名前の意味",
       "img" : "block",
-      "src" : "___"
+      "src" : "image.jpeg"
     },
     {
       "date" : "Sign",
@@ -22,7 +22,7 @@
       "url" : "/sign/",
       "info" : "作曲 Le Makeup / 作詞 中尾香織・ささじまかずま",
       "img" : "block",
-      "src" : "___"
+      "src" : "000.png"
     },
     {
       "date" : "In The Wind",
@@ -31,7 +31,7 @@
       "url" : "/inthewind/",
       "info" : "",
       "img" : "block",
-      "src" : "___"
+      "src" : "image.jpg"
     },
     {
       "date" : "That Smell",
@@ -39,8 +39,8 @@
       "appreciate" : "people",
       "url" : "/thesmell/",
       "info" : "大切にすることを大切にするための本 未収録エッセイ",
-      "img" : "block",
-      "src" : "___"
+      "img" : "none",
+      "src" : ""
     }
   ]
 }
