@@ -18,12 +18,12 @@ function indexHeader(obj) {
 
   const authorORG = document.createElement( "meta" );
   authorORG.setAttribute("name", "author");
-  authorORG.setAttribute("content", obj.author);
+  authorORG.setAttribute("content", ${obj.author});
   head.appendChild(authorORG);
 
   const descriptionORG = document.createElement( "meta" );
   descriptionORG.setAttribute("name", "description");
-  descriptionORG.setAttribute("content", obj.description);
+  descriptionORG.setAttribute("content", ${obj.description});
   head.appendChild(descriptionORG);
 }
 
