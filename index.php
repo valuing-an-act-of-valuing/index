@@ -64,13 +64,6 @@
   <script src="index.js"></script>
 
   <div id="org">
-    <ul>
-      <li class="list_item" data-appreciate="topic">
-        <p>あなたの大切なものは何ですか？</p>
-        <span>What do you value?</span>
-        <a href="/value/online/"></a>
-      </li>
-    </ul>
     <ul class="random">
       <li class="list_item" data-appreciate="topic">
         <p>大切にすることを大切にするための本</p>
@@ -81,6 +74,13 @@
         <p>今でも大切？</p>
         <span>Special Edition</span>
         <a href="/value/still/"></a>
+      </li>
+    </ul>
+    <ul>
+      <li class="list_item" data-appreciate="topic">
+        <p>あなたの大切なものは何ですか？</p>
+        <span>What do you value?</span>
+        <a href="/value/online/"></a>
       </li>
     </ul>
   </div>
