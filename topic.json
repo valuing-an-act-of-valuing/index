@@ -32,6 +32,15 @@
       "more" : "First Edition May 30th 2020",
       "img" : "block",
       "src" : "___"
+    },
+    {
+      "news" : "大切にすることを大切にするためのギャラリー",
+      "as" : "this is a gallery for valuing an act of valuing",
+      "type" : "gallery",
+      "link" : "/value/gallery/",
+      "more" : "___",
+      "img" : "none",
+      "src" : "___"
     }
   ]
 }
