@@ -11,9 +11,9 @@ async function populate() {
 
 function galleryObject(obj) {
   const gallery = document.querySelector('#org .random');
-  const itemsTopics = obj.gallery;
+  const itemsShow = obj.gallery;
 
-  for (const item of itemsTopics) {
+  for (const item of itemsShow) {
     const show = document.createElement('li');
     const showP = document.createElement('p');
     const showSpan = document.createElement('span');
