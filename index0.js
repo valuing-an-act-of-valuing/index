@@ -3,14 +3,14 @@ async function populate() {
   const request = new Request(requestURL);
 
   const response = await fetch(request);
-  const indexJson = await response.text();
+  const jsonORG = await response.text();
 
-  const indexORG = JSON.parse(indexJson);
-  indexHeader(indexORG);
+  const indexORG = JSON.parse(jsonORG);
+  titleORG(indexORG);
   objORG(indexORG);
 }
 
-function indexHeader(obj) {
+function titleORG(obj) {
   const head = document.querySelector('head');
   const titleORG = document.createElement('title');
   titleORG.textContent = `${obj.title} | ${obj.author}`;
