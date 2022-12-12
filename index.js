@@ -13,17 +13,17 @@ async function populate() {
 function indexHeader(obj) {
   const head = document.querySelector('head');
   const titleORG = document.createElement('title');
-  titleORG.textContent = ${obj.title};
+  titleORG.textContent = obj.title;
   head.appendChild(titleORG);
 
   const authorORG = document.createElement( "meta" );
   authorORG.setAttribute("name", "author");
-  authorORG.setAttribute("content", ${obj.author});
+  authorORG.setAttribute("content", obj.author);
   head.appendChild(authorORG);
 
   const descriptionORG = document.createElement( "meta" );
   descriptionORG.setAttribute("name", "description");
-  descriptionORG.setAttribute("content", ${obj.description});
+  descriptionORG.setAttribute("content", obj.description);
   head.appendChild(descriptionORG);
 }
 
