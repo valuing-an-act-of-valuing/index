@@ -19,21 +19,6 @@
     font-family: "MS Mincho", "SimSong", serif;
   }
   </style>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="org.js"></script>
-  <script type="text/javascript">
-  function shuffleContent(container) {
-    var content = container.find("> *");
-    var total = content.length;
-    content.each(function() {
-      content.eq(Math.floor(Math.random() * total)).prependTo(container);
-    });
-  }
-  $(function() {
-    shuffleContent($(".random"));
-  });
-  </script>
 </head>
 
 <body>
@@ -75,7 +60,6 @@
     </ul>
   </form>
 
-
   <div id="org">
     <ul>
       <li class="list_item" data-appreciate="topic">
@@ -86,9 +70,24 @@
     </ul>
 
     <ul class="random"></ul>
-    <script src="index.js"></script>
     <script src="topic.js"></script>
+    <script src="index.js"></script>
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="org.js"></script>
+  <script type="text/javascript">
+  function shuffleContent(container) {
+    var content = container.find("> *");
+    var total = content.length;
+    content.each(function() {
+      content.eq(Math.floor(Math.random() * total)).prependTo(container);
+    });
+  }
+  $(function() {
+    shuffleContent($(".random"));
+  });
+  </script>
 
   <a id="update" href="/value/index/">
     <?php
