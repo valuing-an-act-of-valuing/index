@@ -12,7 +12,7 @@ async function populate() {
 function indexValue(obj) {
   const head = document.querySelector('head');
   const titleValue = document.createElement('title');
-  const valueOnline = "https://creative-community.space/value/"
+  const valueIndex = "https://creative-community.space/value/"
   titleValue.textContent = `${obj.title} by ${obj.author}`;
   head.appendChild(titleValue);
 
@@ -29,17 +29,17 @@ function indexValue(obj) {
 
   const ogURL = document.createElement( "meta" );
   ogURL.setAttribute("property", "og:url");
-  ogURL.setAttribute("content", `${valueOnline}${obj.appreciate}${obj.page}`);
+  ogURL.setAttribute("content", `${valueIndex}${obj.appreciate}${obj.page}`);
   head.appendChild(ogURL);
 
   const ogIMG = document.createElement( "meta" );
   ogIMG.setAttribute("property", "og:image");
-  ogIMG.setAttribute("content", `${valueOnline}${obj.appreciate}${obj.page}${obj.img}`);
+  ogIMG.setAttribute("content", `${valueIndex}${obj.appreciate}${obj.page}${obj.img}`);
   head.appendChild(ogIMG);
 
   const twitterIMG = document.createElement( "meta" );
   twitterIMG.setAttribute("name", "twitter:image");
-  twitterIMG.setAttribute("content", `${valueOnline}${obj.appreciate}${obj.page}${obj.img}`);
+  twitterIMG.setAttribute("content", `${valueIndex}${obj.appreciate}${obj.page}${obj.img}`);
   head.appendChild(twitterIMG);
 }
 
