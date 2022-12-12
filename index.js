@@ -38,22 +38,22 @@ function indexValue(obj) {
 
   const ogSite = document.createElement( "meta" );
   ogSite.setAttribute("property", "og:site_name");
-  ogSite.setAttribute("content", `${obj.site}`);
+  ogSite.setAttribute("content", ${obj.site});
   head.appendChild(ogSite);
 
   const ogURL = document.createElement( "meta" );
   ogURL.setAttribute("property", "og:url");
-  ogURL.setAttribute("content", `${obj.site}${obj.page}`);
+  ogURL.setAttribute("content", ${obj.site}${obj.page});
   head.appendChild(ogURL);
 
   const ogIMG = document.createElement( "meta" );
   ogIMG.setAttribute("property", "og:image");
-  ogIMG.setAttribute("content", `${obj.site}${obj.page}${obj.card}`);
+  ogIMG.setAttribute("content", ${obj.site}${obj.page}${obj.card});
   head.appendChild(ogIMG);
 
   const twitterIMG = document.createElement( "meta" );
   twitterIMG.setAttribute("name", "twitter:image");
-  twitterIMG.setAttribute("content", `${obj.site}${obj.page}${obj.card}`);
+  twitterIMG.setAttribute("content", ${obj.site}${obj.page}${obj.card});
   head.appendChild(twitterIMG);
 }
 
