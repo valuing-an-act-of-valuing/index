@@ -2,16 +2,16 @@
   box-sizing: border-box;
   font-family: 'Source Serif Pro', serif;
   margin: 2.5rem auto;
-  width: 90%;
+  width: 95%;
   height: 75vh;
-  max-width: 500px;
+  max-width: 550px;
   max-height: 75vw;
 }
 
 #icon h1 {
   font-size: 3.33rem;
   font-family: 'Source Serif Pro', serif;
-  padding: 1rem;
+  padding: 1rem 2.5rem 1rem 1rem;
   letter-spacing: 0.1rem;
 }
 
@@ -35,7 +35,7 @@
 
   #icon h1 {
     font-size: 7.5vw;
-    padding: 2.5%;
+    padding: 2.5% 5% 2.5% 2.5%;
     letter-spacing:0.25vw;
   }
 
