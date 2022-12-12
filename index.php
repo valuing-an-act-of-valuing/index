@@ -32,6 +32,7 @@
         <input type="radio" name="appreciate" value="topic" id="topic">
         <label for="topic" class="label">Topic</label>
       </li>
+    <!--
       <li>
         <input type="radio" name="appreciate" value="show" id="show">
         <label for="show" class="label">Show</label>
@@ -40,6 +41,7 @@
         <input type="radio" name="appreciate" value="gallery" id="gallery">
         <label for="gallery" class="label">Gallery</label>
       </li>
+    -->
       <hr />
       <li>
         <input type="radio" name="appreciate" value="thing" id="thing">
@@ -70,7 +72,6 @@
     </ul>
 
     <ul class="random"></ul>
-    <script src="gallery.js"></script>
     <script src="topic.js"></script>
     <script src="index.js"></script>
   </div>
