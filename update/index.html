@@ -16,10 +16,45 @@
   <link rel="stylesheet" type="text/css" href="../value.css" />
 
   <style>
+  #update {
+    display: flex;
+    flex-direction:column-reverse;
+  }
+
   #update div {
     clear: both;
     display: block;
     width: 100%;
+  }
+
+  #update div .tt b,
+  #update div .link {
+    font-size: 125%;
+  }
+
+  #update div .tt b {
+    line-height: 150%;
+  }
+
+  #update div .link {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  #update div .link a {
+    color: #000;
+    border: 1px solid;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    transition: 2.5s all;
+  }
+
+  #update div .link a:hover {
+    color: #fff;
+    background-color: red;
+    transition: 1.5s all;
   }
 
   #update img {
@@ -46,7 +81,6 @@
 </head>
 
 <body>
-
   <div id="icon">
     <h1>
       <u>this is</u> a
