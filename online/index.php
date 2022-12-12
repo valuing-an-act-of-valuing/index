@@ -106,13 +106,14 @@ if (!empty($_POST['btn_confirm'])) {
 
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="../value.css" />
+	<link rel="stylesheet" type="text/css" href="../index/icon.css" />
 	<link rel="icon" href="https://creative-community.space/value/icon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<?php if ($page_flag === 1) : ?>
-		<form action="" method="post">
+		<form id="confirme" action="" method="post">
 			<div id="what" class="<?php echo $_POST['language']; ?>">
 				<b><?php echo $_POST['title']; ?></b>
 			</div>
@@ -147,11 +148,17 @@ if (!empty($_POST['btn_confirm'])) {
 		<a id="title" href="/value/" target="_parent">大切にすることを大切にするための場所</a>
 
 	<?php else : ?>
-		<a id="title" href="https://creative-community.space/value/" target="_parent">大切にすることを大切にするための場所</a>
+		<a id="title" href="https://creative-community.space/value/" target="_parent">あなたの大切なものは何ですか？</a>
 		<section id="submit" class="form">
+		  <div id="icon">
+		    <h1>
+		      <u>this is</u> a
+		      <i>entry form</i> for
+		      <b>valuing an act of valuing</b>
+		    </h1>
+		  </div>
 
-			<form action="" method="post">
-
+			<form id="form" action="" method="post">
 				<h1>Q. What do you value?</h1>
 				<p>Title<br />
 					<input type="text" name="title" value="<?php if (!empty($_POST['title'])) {
