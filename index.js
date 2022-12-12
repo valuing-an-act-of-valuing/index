@@ -6,10 +6,10 @@ async function populate() {
   const json = await response.text();
 
   const index = JSON.parse(json);
-  indexHeader(index);
+  indexValue(index);
 }
 
-function indexHeader(obj) {
+function indexValue(obj) {
   const head = document.querySelector('head');
 
   const titleHead = document.createElement('title');
