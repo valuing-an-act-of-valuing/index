@@ -100,8 +100,8 @@
 #image {
   position: relative;
   z-index: 10;
-  width: 85vw;
-  height: 85vh;
+  width: 75vw;
+  height: 75vh;
   filter: blur(0.5rem);
   -webkit-filter: blur(0.5rem);
   transition: all 2500ms ease;
@@ -119,8 +119,8 @@
   left: 50%;
   width: auto;
   height: auto;
-  max-width: 70%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 100%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
   pointer-events: none;
