@@ -47,7 +47,6 @@
   position: relative;
   box-sizing: border-box;
   font-size: 0.8rem;
-  width: 75%;
 }
 
 .ja_app {
@@ -55,6 +54,7 @@
   padding: 7.5% 5% 15% 15%;
   margin: auto;
   height: 90vh;
+  width: 75%;
   max-width: 1000px;
   max-height: 50rem;
   overflow: auto;
@@ -63,9 +63,18 @@
 .en_app,
 .other_app {
   font-family: 'Source Serif Pro', serif;
+  width: 90%;
+  max-width: 45rem;
+}
+
+.en_app {
+  padding: 5%;
+  margin: 2.5% auto;
+}
+
+.other_app {
   padding: 2.5% 5%;
   margin: 2.5% auto;
-  max-width: 45rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -73,7 +82,11 @@
     padding: 4rem 2.5rem 7.5rem 7.5rem;
   }
 
-  .en_app,
+  .en_app {
+    padding: 2.5rem;
+    margin: 1rem auto;
+  }
+
   .other_app {
     padding: 1rem 2.5rem;
     margin: 1rem auto;
