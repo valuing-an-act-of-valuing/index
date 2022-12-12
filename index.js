@@ -5,26 +5,56 @@ async function populate() {
   const response = await fetch(request);
   const indexJson = await response.text();
 
-  const indexORG = JSON.parse(indexJson);
-  indexHeader(indexORG);
-  indexObject(indexORG);
+  const indexIndex = JSON.parse(indexJson);
+  indexHeader(indexIndex);
+  indexObject(indexIndex);
 }
 
 function indexHeader(obj) {
   const head = document.querySelector('head');
-  const titleORG = document.createElement('title');
-  titleORG.textContent = obj.title;
-  head.appendChild(titleORG);
+  const titleIndex = document.createElement('title');
+  titleIndex.textContent = obj.title;
+  head.appendChild(titleIndex);
 
-  const authorORG = document.createElement( "meta" );
-  authorORG.setAttribute("name", "author");
-  authorORG.setAttribute("content", obj.author);
-  head.appendChild(authorORG);
+  const authorIndex = document.createElement( "meta" );
+  authorIndex.setAttribute("name", "author");
+  authorIndex.setAttribute("content", obj.author);
+  head.appendChild(authorIndex);
 
-  const descriptionORG = document.createElement( "meta" );
-  descriptionORG.setAttribute("name", "description");
-  descriptionORG.setAttribute("content", obj.description);
-  head.appendChild(descriptionORG);
+  const descriptionIndex = document.createElement( "meta" );
+  descriptionIndex.setAttribute("name", "description");
+  descriptionIndex.setAttribute("content", obj.description);
+  head.appendChild(descriptionIndex);
+
+  const ogTitle = document.createElement('meta');
+  ogTitle.setAttribute("property", "og:title");
+  ogTitle.setAttribute("content", obj.title);
+  head.appendChild(ogTitle);
+
+  const ogDescription = document.createElement('meta');
+  ogDescription.setAttribute("property", "og:description");
+  ogDescription.setAttribute("content", obj.description);
+  head.appendChild(ogDescription);
+
+  const ogSite = document.createElement( "meta" );
+  ogSite.setAttribute("property", "og:site_name");
+  ogSite.setAttribute("content", obj.site);
+  head.appendChild(ogSite);
+
+  const ogURL = document.createElement( "meta" );
+  ogURL.setAttribute("property", "og:url");
+  ogURL.setAttribute("content", `${obj.site}${obj.page}`);
+  head.appendChild(ogURL);
+
+  const ogIMG = document.createElement( "meta" );
+  ogIMG.setAttribute("property", "og:image");
+  ogIMG.setAttribute("content", `${obj.site}${obj.page}${obj.card}`);
+  head.appendChild(ogIMG);
+
+  const twitterIMG = document.createElement( "meta" );
+  twitterIMG.setAttribute("name", "twitter:image");
+  twitterIMG.setAttribute("content", `${obj.site}${obj.page}${obj.card}`);
+  head.appendChild(twitterIMG);
 }
 
 function indexObject(obj) {
