@@ -14,12 +14,26 @@
   <link rel="stylesheet" type="text/css" href="index.css" />
   <link rel="stylesheet" type="text/css" href="value.css" />
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
-
   <style type="text/css">
   .pehu {
     font-family: "MS Mincho", "SimSong", serif;
   }
   </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="org.js"></script>
+  <script type="text/javascript">
+  function shuffleContent(container) {
+    var content = container.find("> *");
+    var total = content.length;
+    content.each(function() {
+      content.eq(Math.floor(Math.random() * total)).prependTo(container);
+    });
+  }
+  $(function() {
+    shuffleContent($(".random"));
+  });
+  </script>
 </head>
 
 <body>
@@ -75,22 +89,6 @@
     <script src="index.js"></script>
     <script src="topic.js"></script>
   </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="org.js"></script>
-
-  <script type="text/javascript">
-  function shuffleContent(container) {
-    var content = container.find("> *");
-    var total = content.length;
-    content.each(function() {
-      content.eq(Math.floor(Math.random() * total)).prependTo(container);
-    });
-  }
-  $(function() {
-    shuffleContent($(".random"));
-  });
-  </script>
 
   <a id="update" href="/value/index/">
     <?php
