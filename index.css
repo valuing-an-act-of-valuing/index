@@ -195,6 +195,7 @@ input[type="radio"] {
 @media screen and (min-width: 750px) {
   #org {
     margin: 12.5rem auto 5rem;
+    width: 97.5%;
     max-width: 1200px;
   }
 
