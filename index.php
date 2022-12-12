@@ -26,7 +26,7 @@
 
   <form id="index">
     <p>Index /
-      <button onclick="window.location.reload(true);">valuing an act of valuing</button>
+      <button type="button" onclick="window.location.reload(true);">valuing an act of valuing</button>
     </p>
     <ul class="search-box" id="click">
       <li>
