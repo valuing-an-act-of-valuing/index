@@ -13,7 +13,7 @@ function indexValue(obj) {
   const head = document.querySelector('head');
 
   const titleHead = document.createElement('title');
-  titleHead.textContent = `${obj.title}`;
+  titleHead.textContent = ${obj.title};
   head.appendChild(titleHead);
 
   const authorHead = document.createElement( "meta" );
@@ -34,12 +34,12 @@ function indexValue(obj) {
   const ogDescription = document.createElement('meta');
   ogDescription.setAttribute("property", "og:description");
   ogDescription.setAttribute("content", obj.description);
-  head.appendChild(ogTitle);
+  head.appendChild(ogDescription);
 
-  const ogURL = document.createElement( "meta" );
-  ogURL.setAttribute("property", "og:site_name");
-  ogURL.setAttribute("content", `${obj.site}`);
-  head.appendChild(ogURL);
+  const ogSite = document.createElement( "meta" );
+  ogSite.setAttribute("property", "og:site_name");
+  ogSite.setAttribute("content", `${obj.site}`);
+  head.appendChild(ogSite);
 
   const ogURL = document.createElement( "meta" );
   ogURL.setAttribute("property", "og:url");
