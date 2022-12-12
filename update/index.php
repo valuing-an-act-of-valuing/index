@@ -77,6 +77,7 @@
 
   #update img {
     float: right;
+    margin: 0 0 1rem 1rem;
     width: auto;
     height: auto;
     max-width: 10rem;
