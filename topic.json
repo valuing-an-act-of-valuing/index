@@ -7,6 +7,15 @@
   "img" : "icon.png",
   "topics" : [
     {
+      "news" : "NS5",
+      "as" : "Niceshop Su 5th anniversary exhibition",
+      "type" : "show",
+      "link" : "https://vg.pe.hu/2f/ns5.html",
+      "more" : "2019年2月22日-3月8日 at ∧° ┐",
+      "img" : "none",
+      "src" : "___"
+    },
+    {
       "news" : "大切にすることを大切にするための本",
       "as" : "the book for valuing an act of valuing",
       "type" : "topic",
