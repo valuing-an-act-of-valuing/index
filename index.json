@@ -4,5 +4,21 @@
   "description" : "あなたの大切なものは何ですか？",
   "site" : "https://creative-community.space",
   "url" : "/value/",
-  "image" : "___.jpg"
+  "image" : "___.jpg",
+  "org" : [
+    {
+      "date" : "Haiku",
+      "name" : "俳句",
+      "about" : "The theme is Today",
+      "url" : "/up/memories/haiku/",
+      "class" : "collaboration reading"
+    },
+    {
+      "date" : "YouTube",
+      "name" : "underwater_relax_videos",
+      "about" : "Selected by SK.Ⅱ",
+      "url" : "/up/tsom/underwater_relax_videos.html",
+      "class" : "watching"
+    }
+  ]
 }
