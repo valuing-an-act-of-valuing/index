@@ -46,7 +46,7 @@ function indexValue(obj) {
 populate();
 
 const valueCSS = document.createElement( "link" );
-valueCSS.href = "https://creative-community.space/value/value.css";
+valueCSS.href = "https://creative-community.space/value/online/value.css";
 valueCSS.type = "text/css";
 valueCSS.rel = "stylesheet";
 

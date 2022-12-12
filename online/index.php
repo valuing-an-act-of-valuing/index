@@ -105,7 +105,7 @@ if (!empty($_POST['btn_confirm'])) {
 	<meta name="twitter:image" content="https://creative-community.space/value/icon.png" />
 
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="stylesheet" type="text/css" href="../value.css" />
+	<link rel="stylesheet" type="text/css" href="value.css" />
 	<link rel="stylesheet" type="text/css" href="../index/icon.css" />
 	<link rel="icon" href="https://creative-community.space/value/icon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">

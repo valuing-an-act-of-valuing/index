@@ -12,7 +12,7 @@
   <link rel="icon" href="index/icon.png">
   <link rel="apple-touch-icon" href="index/icon.png">
   <link rel="stylesheet" type="text/css" href="index.css" />
-  <link rel="stylesheet" type="text/css" href="value.css" />
+  <link rel="stylesheet" type="text/css" href="online/value.css" />
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
   <style type="text/css">
   .pehu {

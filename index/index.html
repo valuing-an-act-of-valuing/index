@@ -13,7 +13,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@pe_hu_" />
   <link rel="stylesheet" type="text/css" href="icon.css" />
-  <link rel="stylesheet" type="text/css" href="../value.css" />
+  <link rel="stylesheet" type="text/css" href="../online/value.css" />
 
   <style>
 
@@ -130,20 +130,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
-  $(function () {
-    // #で始まるアンカーをクリックした場合に処理
-    $('a[href^=#]').click(function () {
-      // スクロールの速度
-      var speed = 1500; // ミリ秒
-      var href = $(this).attr("href");
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top;
-      $('body,html').animate({
-        scrollTop: position
-      }, speed, 'swing');
-      return false;
-    });
-  });
   </script>
 </body>
 
