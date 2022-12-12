@@ -38,7 +38,7 @@ body {
   right: 0;
   font-size: 75%;
   border-left: solid 1px red;
-  padding-left: 0.5em;
+  padding-left: 0.25em;
   margin: 5%;
   transition: 2.5s all;
 }
