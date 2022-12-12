@@ -54,7 +54,8 @@
 #ja_app {
   display: flex;
   padding: 7.5% 5% 15% 15%;
-  height: 90vh;
+  height: 100vh;
+  max-height: 1000px;
   max-height: 50rem;
   overflow: auto;
 }
