@@ -6,12 +6,11 @@ async function populate() {
   const json = await response.text();
 
   const index = JSON.parse(json);
-  indexValue(index);
+  indexJson(index);
 }
 
-function indexValue(obj) {
+function indexJson(obj) {
   const head = document.querySelector('head');
-
   const titleHead = document.createElement('title');
   titleHead.textContent = ${obj.title};
   head.appendChild(titleHead);
@@ -25,6 +24,36 @@ function indexValue(obj) {
   descriptionHead.setAttribute("name", "description");
   descriptionHead.setAttribute("content", obj.description);
   head.appendChild(descriptionHead);
+
+  const ogTitle = document.createElement('meta');
+  ogTitle.setAttribute("property", "og:title");
+  ogTitle.setAttribute("content", obj.title);
+  head.appendChild(ogTitle);
+
+  const ogDescription = document.createElement('meta');
+  ogDescription.setAttribute("property", "og:description");
+  ogDescription.setAttribute("content", obj.description);
+  head.appendChild(ogDescription);
+
+  const ogSite = document.createElement( "meta" );
+  ogSite.setAttribute("property", "og:site_name");
+  ogSite.setAttribute("content", ${obj.site});
+  head.appendChild(ogSite);
+
+  const ogURL = document.createElement( "meta" );
+  ogURL.setAttribute("property", "og:url");
+  ogURL.setAttribute("content", `${obj.site}${obj.page}`);
+  head.appendChild(ogURL);
+
+  const ogIMG = document.createElement( "meta" );
+  ogIMG.setAttribute("property", "og:image");
+  ogIMG.setAttribute("content", `${obj.site}${obj.page}${obj.card}`);
+  head.appendChild(ogIMG);
+
+  const twitterIMG = document.createElement( "meta" );
+  twitterIMG.setAttribute("name", "twitter:image");
+  twitterIMG.setAttribute("content", `${obj.site}${obj.page}${obj.card}`);
+  head.appendChild(twitterIMG);
 }
 
 populate();
