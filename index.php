@@ -29,24 +29,30 @@
       <a onclick="window.location.reload(true);">valuing an act of valuing</a>
     </p>
     <ul class="search-box" id="click">
-      <input type="radio" name="appreciate" value="topics" id="topics">
-      <label for="topics" class="label">Topics</label>
-      <input type="radio" name="appreciate" value="show" id="show">
-      <label for="show" class="label">Show</label>
-      <input type="radio" name="appreciate" value="gallery" id="gallery">
-      <label for="gallery" class="label">Gallery</label>
+      <li>
+        <input type="radio" name="appreciate" value="topic" id="topic">
+        <label for="topic" class="label">Topic</label>
+      </li>
+      <li>
+        <input type="radio" name="appreciate" value="show" id="show">
+        <label for="show" class="label">Show</label>
+      </li>
+      <li>
+        <input type="radio" name="appreciate" value="gallery" id="gallery">
+        <label for="gallery" class="label">Gallery</label>
+      </li>
       <hr />
       <li>
-        <input type="radio" name="appreciate" value="things" id="things">
-        <label for="things" class="label">Things</label>
+        <input type="radio" name="appreciate" value="thing" id="thing">
+        <label for="thing" class="label">Thing</label>
       </li>
       <li>
-        <input type="radio" name="appreciate" value="objects" id="objects">
-        <label for="objects" class="label">Objects</label>
+        <input type="radio" name="appreciate" value="object" id="object">
+        <label for="object" class="label">Object</label>
       </li>
       <li>
-        <input type="radio" name="appreciate" value="peoples" id="peoples">
-        <label for="peoples" class="label">Peoples</label>
+        <input type="radio" name="appreciate" value="people" id="people">
+        <label for="people" class="label">People</label>
       </li>
       <li>
         <input type="radio" name="appreciate" value="valuing" id="valuing">
@@ -59,15 +65,28 @@
 
   <div id="org">
     <ul>
-      <li class="list_item" data-appreciate="topics">
+      <li class="list_item" data-appreciate="topic">
         <p>あなたの大切なものは何ですか？</p>
         <span>What do you value?</span>
         <a href="/value/online/"></a>
       </li>
     </ul>
-    <ul class="random"></ul>
+    <ul class="random">
+      <li class="list_item" data-appreciate="topic">
+        <p>大切にすることを大切にするための本</p>
+        <span>the book for valuing an act of valuing</span>
+        <a href="/value/book/"></a>
+      </li>
+      <li class="list_item" data-appreciate="topic">
+        <p>今でも大切？</p>
+        <span>Special Edition</span>
+        <a href="/value/still/"></a>
+      </li>
+    </ul>
   </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="org.js"></script>
   <script type="text/javascript">
   function shuffleContent(container) {
     var content = container.find("> *");
@@ -80,9 +99,6 @@
     shuffleContent($(".random"));
   });
   </script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="org.js"></script>
 
   <a id="update" onclick="window.location.reload(true);">
     <?php

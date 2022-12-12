@@ -7,16 +7,32 @@
   "image" : "___.jpg",
   "org" : [
     {
-      "date" : "大切なもの",
-      "name" : "名前",
-      "appreciate" : "___",
-      "url" : "/haiku/"
+      "date" : "pe.hu",
+      "name" : "ささじまかずま",
+      "appreciate" : "valuing",
+      "url" : "/motto/",
+      "info" : "MOTTO | ペフの由来と名前の意味"
     },
     {
-      "date" : "大切なもの",
-      "name" : "名前",
-      "appreciate" : "___",
-      "url" : "/haiku/"
+      "date" : "Sign",
+      "name" : "∧° ┐ | creative, community space",
+      "appreciate" : "people",
+      "url" : "/sign/",
+      "info" : "作曲 Le Makeup / 作詞 中尾香織・ささじまかずま"
+    },
+    {
+      "date" : "In The Wind",
+      "name" : "Kazuma Sasajima",
+      "appreciate" : "thing",
+      "url" : "/inthewind/",
+      "info" : ""
+    },
+    {
+      "date" : "That Smell",
+      "name" : "Kazuma Sasajima",
+      "appreciate" : "people",
+      "url" : "/thesmell/",
+      "info" : "大切にすることを大切にするための本 未収録エッセイ"
     }
   ]
 }
