@@ -2,9 +2,9 @@
   box-sizing: border-box;
   font-family: 'Source Serif Pro', serif;
   margin: 2.5rem auto;
-  width: 75%;
+  width: 90%;
   height: 75vh;
-  max-width: 550px;
+  max-width: 500px;
   max-height: 75vw;
 }
 
