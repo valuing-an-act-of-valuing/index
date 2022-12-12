@@ -10,6 +10,7 @@ body {
 }
 
 #index,
+#index button,
 #index .reset-button,
 #org,
 #credit {
@@ -37,7 +38,6 @@ body {
   right: 0;
   font-size: 75%;
   border-left: solid 1px red;
-  color: #000;
   padding-left: 0.5em;
   margin: 5%;
   transition: 2.5s all;
@@ -100,6 +100,9 @@ input[type="radio"] {
 
 #index p {
   font-size: 125%;
+}
+
+#index p {
   margin: 0 0.25rem 1rem;
 }
 
@@ -109,7 +112,7 @@ input[type="radio"] {
   flex-wrap: wrap;
 }
 
-#index a,
+
 #credit a,
 #index .label,
 #index .reset-button {
@@ -142,8 +145,12 @@ input[type="radio"] {
   padding: 0.25rem 0.5rem;
 }
 
-#index a {
+#index button {
+  background: transparent;
+  border: 1px solid transparent;
   border-radius: 0.5rem;
+  color: #000;
+  font-size: 100%;
   padding: 0.25rem 0.5rem;
   transition: 1.5s all;
 }
@@ -154,9 +161,10 @@ input[type="radio"] {
   transition: 1.5s all;
 }
 
-#index a:hover,
+#index button:hover,
 #credit a:hover {
   color: #fff;
+  cursor: pointer;
   transition: 1.5s all;
   background: red;
 }

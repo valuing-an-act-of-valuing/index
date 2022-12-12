@@ -26,7 +26,7 @@
 
   <form id="index">
     <p>Index /
-      <a onclick="window.location.reload(true);">valuing an act of valuing</a>
+      <button onclick="window.location.reload(true);">valuing an act of valuing</button>
     </p>
     <ul class="search-box" id="click">
       <li>
@@ -100,7 +100,7 @@
   });
   </script>
 
-  <a id="update" onclick="window.location.reload(true);">
+  <a id="update" href="#" onclick="window.location.reload(true);">
     <?php
     $mod = filemtime("index.json");
     date_default_timezone_set('Asia/Tokyo');
@@ -111,7 +111,7 @@
 
   <div id="credit" class="back">
     Presented by
-    <a href="/pehu/" class="pehu">∧°┐</a>
+    <a href="#" class="pehu">∧°┐</a>
   </div>
 </body>
 
