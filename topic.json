@@ -1,0 +1,37 @@
+{
+  "title" : "大切にすることを大切にするための場所",
+  "author" : "クリエイティブ・コミュニティスペース ペフ",
+  "description" : "this is a space for valuing an act of valuing",
+  "appreciate" : "index",
+  "page" : "/",
+  "img" : "icon.png",
+  "topics" : [
+    {
+      "news" : "大切にすることを大切にするための本",
+      "as" : "the book for valuing an act of valuing",
+      "type" : "topic",
+      "link" : "/value/book/",
+      "more" : "Released on November 23th 2019",
+      "img" : "block",
+      "src" : "___"
+    },
+    {
+      "news" : "今でも大切？",
+      "as" : "Can you valuing to your value still?",
+      "type" : "topic",
+      "link" : "/value/still/",
+      "more" : "First Edition May 30th 2020",
+      "img" : "block",
+      "src" : "___"
+    },
+    {
+      "news" : "大切にすることを大切にするための場所",
+      "as" : "this is a space for valuing an act of valuing",
+      "type" : "topic",
+      "link" : "/value/index/",
+      "more" : "Published on November 23th 2021",
+      "img" : "block",
+      "src" : "icon.png"
+    }
+  ]
+}

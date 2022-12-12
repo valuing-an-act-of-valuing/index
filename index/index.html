@@ -42,6 +42,7 @@
   #update {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 2.5rem;
   }
 
   #update div {
@@ -50,13 +51,15 @@
     width: 100%;
   }
 
-  #update div .tt b,
+  #update div .tt,
   #update div .link {
     font-size: 125%;
   }
 
   #update div .tt b {
-    line-height: 150%;
+    line-height: 200%;
+    font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+
   }
 
   #update div .link a {
@@ -103,7 +106,7 @@
   <div id="icon">
     <h1>
       <u>this is</u> a
-      <i>space</i> for
+      <i>index</i> for
       <b>valuing an act of valuing</b>
     </h1>
   </div>
@@ -120,18 +123,10 @@
   </div>
 
   <div id="what" class="ja"><a href="#about"></a></div>
-  <a id="you" href="#update">
-    <?php
-    $mod = filemtime("../index.json");
-    date_default_timezone_set('Asia/Tokyo');
-    print "" . date("Y-m-d H:i:s", $mod);
-    ?>
-    更新
-  </a>
+  <a id="you" href="#update"></a>
 
   <a class="back" href="#" onclick="window.history.back(); return false;">↩︎</a>
   <script src="index.js"></script>
-  <script src="update.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
