@@ -62,6 +62,20 @@ function indexObject(obj) {
   const itemsORG = obj.org;
 
   for (const item of itemsORG) {
+    const itemORG = document.createElement('li');
+    const itemP = document.createElement('p');
+    const itemSpan = document.createElement('span');
+    const itemA = document.createElement('a');
+
+    itemORG.setAttribute("class", "list_item");
+    itemORG.setAttribute("data-appreciate", item.appreciate);
+    itemP.textContent = item.date;
+    itemSpan.textContent = item.name;
+    itemA.href = `${obj.site}${obj.url}${item.appreciate}${item.url}`;
+
+    itemORG.appendChild(itemP);
+    itemORG.appendChild(itemSpan);
+    itemORG.appendChild(itemA);
 
     org.appendChild(itemORG);
   }
