@@ -69,12 +69,12 @@
 
 .en_app {
   padding: 5%;
-  margin: 2.5% auto;
+  margin: 2.5% auto 15%;
 }
 
 .other_app {
   padding: 2.5% 5%;
-  margin: 2.5% auto 15%;
+  margin: 2.5% auto;
 }
 
 @media screen and (min-width: 750px) {
@@ -84,12 +84,12 @@
 
   .en_app {
     padding: 2.5rem;
-    margin: 1rem auto;
+    margin: 1rem auto 5rem;
   }
 
   .other_app {
     padding: 1rem 2.5rem;
-    margin: 1rem auto 5rem;
+    margin: 1rem auto;
   }
 
   #you {
