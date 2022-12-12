@@ -1,5 +1,5 @@
 async function populate() {
-  const requestURL = 'topic.json';
+  const requestURL = 'index.json';
   const request = new Request(requestURL);
 
   const response = await fetch(request);
@@ -7,7 +7,6 @@ async function populate() {
 
   const updateIndex = JSON.parse(indexJson);
   updateHeader(updateIndex);
-  updateObject(updateIndex);
 }
 
 function updateHeader(obj) {
@@ -17,11 +16,8 @@ function updateHeader(obj) {
   titleValue.textContent = `${obj.title} by ${obj.author}`;
   head.appendChild(titleValue);
 
-  const what = document.querySelector('#what b');
+  const what = document.querySelector('#what a');
   what.innerText = obj.title;
-
-  const you = document.querySelector('#you');
-  you.innerText = obj.author;
 
   const authorValue = document.createElement( "meta" );
   authorValue.setAttribute("name", "author");
@@ -52,45 +48,6 @@ function updateHeader(obj) {
   twitterIMG.setAttribute("name", "twitter:image");
   twitterIMG.setAttribute("content", `${valueIndex}${obj.appreciate}${obj.page}${obj.img}`);
   head.appendChild(twitterIMG);
-}
-
-function updateObject(obj) {
-  const topic = document.querySelector('#topic');
-  const itemTopic = obj.topics;
-
-  for (const item of itemTopic) {
-    const itemTopic = document.createElement('div');
-    const itemIMG = document.createElement('img');
-    const itemPtitle = document.createElement('p');
-    const itemPinfo = document.createElement('p');
-    const itemPlink = document.createElement('p');
-    const itemB = document.createElement('b');
-    const itemBR = document.createElement('br');
-    const itemSpan = document.createElement('span');
-    const itemA = document.createElement('a');
-
-    itemTopic.setAttribute("class", "other_app");
-    itemIMG.style.display = item.img;
-    itemIMG.src = `${item.link}${item.src}`;
-    itemPtitle.setAttribute("class", "tt");
-    itemB.textContent = item.news;
-    itemSpan.textContent = item.by;
-    itemPinfo.textContent = item.more;
-    itemPlink.setAttribute("class", "link");
-    itemA.href = item.link;
-    itemA.textContent = "Read More";
-
-    itemTopic.appendChild(itemIMG);
-    itemTopic.appendChild(itemPtitle);
-    itemPtitle.appendChild(itemB);
-    itemPtitle.appendChild(itemBR);
-    itemPtitle.appendChild(itemSpan);
-    itemTopic.appendChild(itemPinfo);
-    itemTopic.appendChild(itemPlink);
-    itemPlink.appendChild(itemA);
-
-    topic.appendChild(itemTopic);
-  }
 }
 
 populate();

@@ -63,7 +63,7 @@
 .en_app,
 .other_app {
   font-family: 'Source Serif Pro', serif;
-  padding: 2.5%;
+  padding: 2.5% 5%;
   margin: 2.5% auto;
   max-width: 45rem;
 }
@@ -75,7 +75,7 @@
 
   .en_app,
   .other_app {
-    padding: 1rem;
+    padding: 1rem 2.5rem;
     margin: 1rem auto;
   }
 

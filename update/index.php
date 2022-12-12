@@ -16,6 +16,29 @@
   <link rel="stylesheet" type="text/css" href="../value.css" />
 
   <style>
+
+  #what a,
+  #you {
+    color: #000;
+    text-decoration: none;
+    transition: 2.5s all;
+  }
+
+  #what a:hover,
+  #you:hover  {
+    color: red;
+    transition: 1s all;
+  }
+
+  #what a {
+    border-left: solid 1px red;
+    padding-left: 0.5em;
+  }
+
+  #what a:hover  {
+    border-left: solid 1px #000;
+  }
+
   #update {
     display: flex;
     flex-direction: column-reverse;
@@ -86,7 +109,7 @@
 
   <div id="update"></div>
 
-  <div class="ja_app">
+  <div id="about" class="ja_app">
     このプロジェクトで「大切にすること」はただ一つ。
     <br />誰にでもある「何かを大切に思う気持ち」を平等に評価すること。<br />
     <br />誰にもわかってもらえないかもしれないけど、自分にとっては大切なことやもの。
@@ -95,10 +118,18 @@
     <br />誰からの評価も批判も気にならないほど、大切にすることを大切にするために、いろいろな人たちが大切にすることやものをここに集めます。
   </div>
 
-  <div id="what" class="ja"><b></b></div>
-  <div id="you"></div>
+  <div id="what" class="ja"><a href="#about"></a></div>
+  <a id="you" href="#update">
+    <?php
+    $mod = filemtime("../index.json");
+    date_default_timezone_set('Asia/Tokyo');
+    print "" . date("Y-m-d H:i:s", $mod);
+    ?>
+    更新
+  </a>
 
   <a class="back" href="#" onclick="window.history.back(); return false;">↩︎</a>
+  <script src="index.js"></script>
   <script src="update.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
