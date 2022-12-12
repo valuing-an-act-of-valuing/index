@@ -61,21 +61,8 @@
     </ul>
   </form>
 
-  <script src="index.js"></script>
 
   <div id="org">
-    <ul class="random">
-      <li class="list_item" data-appreciate="topic">
-        <p>大切にすることを大切にするための本</p>
-        <span>the book for valuing an act of valuing</span>
-        <a href="/value/book/"></a>
-      </li>
-      <li class="list_item" data-appreciate="topic">
-        <p>今でも大切？</p>
-        <span>Special Edition</span>
-        <a href="/value/still/"></a>
-      </li>
-    </ul>
     <ul>
       <li class="list_item" data-appreciate="topic">
         <p>あなたの大切なものは何ですか？</p>
@@ -83,6 +70,10 @@
         <a href="/value/online/"></a>
       </li>
     </ul>
+
+    <ul class="random"></ul>
+    <script src="index.js"></script>
+    <script src="topic.js"></script>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
