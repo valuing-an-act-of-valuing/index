@@ -3,6 +3,6 @@
   "author" : "∧°┐",
   "description" : "あなたの大切なものは何ですか？",
   "site" : "https://creative-community.space",
-  "page" : "/value/",
-  "card" : "___.jpg"
+  "url" : "/value/",
+  "image" : "___.jpg"
 }
