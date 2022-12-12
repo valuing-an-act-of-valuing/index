@@ -1,7 +1,7 @@
 {
   "title" : "大切にすることを大切にするための場所",
   "author" : "∧°┐",
-  "description" : "あなたの大切なものは何ですか？",
+  "description" : "this is a space for valuing an act of valuing",
   "site" : "https://creative-community.space",
   "url" : "/value/",
   "image" : "update/icon.png",
@@ -11,28 +11,36 @@
       "name" : "ささじまかずま",
       "appreciate" : "valuing",
       "url" : "/motto/",
-      "info" : "MOTTO | ペフの由来と名前の意味"
+      "info" : "MOTTO | ペフの由来と名前の意味",
+      "img" : "block",
+      "src" : "___"
     },
     {
       "date" : "Sign",
       "name" : "∧° ┐ | creative, community space",
       "appreciate" : "people",
       "url" : "/sign/",
-      "info" : "作曲 Le Makeup / 作詞 中尾香織・ささじまかずま"
+      "info" : "作曲 Le Makeup / 作詞 中尾香織・ささじまかずま",
+      "img" : "block",
+      "src" : "___"
     },
     {
       "date" : "In The Wind",
       "name" : "Kazuma Sasajima",
       "appreciate" : "thing",
       "url" : "/inthewind/",
-      "info" : ""
+      "info" : "",
+      "img" : "block",
+      "src" : "___"
     },
     {
       "date" : "That Smell",
       "name" : "Kazuma Sasajima",
       "appreciate" : "people",
       "url" : "/thesmell/",
-      "info" : "大切にすることを大切にするための本 未収録エッセイ"
+      "info" : "大切にすることを大切にするための本 未収録エッセイ",
+      "img" : "block",
+      "src" : "___"
     }
   ]
 }

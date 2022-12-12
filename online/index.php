@@ -119,7 +119,7 @@ if (!empty($_POST['btn_confirm'])) {
 			<div id="you">
 				<?php echo $_POST['name']; ?>
 			</div>
-			<div id="<?php echo $_POST['language']; ?>_app">
+			<div class="<?php echo $_POST['language']; ?>_app">
 				<?php echo nl2br($_POST['essay']); ?>
 			</div>
 

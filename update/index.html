@@ -13,35 +13,75 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@pe_hu_" />
   <link rel="stylesheet" type="text/css" href="icon.css" />
+  <link rel="stylesheet" type="text/css" href="../value.css" />
+
+  <style>
+  #update img {
+    float: right;
+    width: auto;
+    height: auto;
+    max-width: 45%;
+    pointer-events: none;
+    user-select: none;
+    filter: blur(0.5rem);
+    -webkit-filter: blur(0.5rem);
+    transition: all 2500ms ease;
+  }
+
+  #update div:hover img {
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    transition: all 1000ms ease;
+  }
+  </style>
 
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <h1 id="icon">
-    <u>this is</u> a
-    <i>space</i>
-    for
-    <b>valuing an act of valuing</b>
-  </h1>
+  <div id="icon">
+    <h1>
+      <u>this is</u> a
+      <i>space</i> for
+      <b>valuing an act of valuing</b>
+    </h1>
+  </div>
 
-  <div id="ja_app">
+  <div id="update"></div>
+
+  <div class="ja_app">
     このプロジェクトで「大切にすること」はただ一つ。
     <br />誰にでもある「何かを大切に思う気持ち」を平等に評価すること。<br />
     <br />誰にもわかってもらえないかもしれないけど、自分にとっては大切なことやもの。
     <br />特別な人からの贈り物とか、ずっと使っている愛着のあるものだったり、自慢したいことだったり、もうここにはないけど時々思い出す瞬間とか。<br />
     <br />いろいろな人たちの「大切にすること」を知ることが、「大切にすることを大切にする」ための第一歩。<br />
-    <br />誰からの評価も批判も気にならないほど、大切にすることを大切にするために、いろいろな人たちが大切にすることやものをここに集めます。<br />
+    <br />誰からの評価も批判も気にならないほど、大切にすることを大切にするために、いろいろな人たちが大切にすることやものをここに集めます。
   </div>
-
-  <!-- <div id="en_app"> text here </div> -->
 
   <div id="what" class="ja"><b></b></div>
   <div id="you"></div>
 
   <a class="back" href="#" onclick="window.history.back(); return false;">↩︎</a>
-  <script src="https://creative-community.space/value/value.js"></script>
+  <script src="update.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(function () {
+    // #で始まるアンカーをクリックした場合に処理
+    $('a[href^=#]').click(function () {
+      // スクロールの速度
+      var speed = 1500; // ミリ秒
+      var href = $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({
+        scrollTop: position
+      }, speed, 'swing');
+      return false;
+    });
+  });
+  </script>
 </body>
 
 </html>
