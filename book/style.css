@@ -1,0 +1,175 @@
+body,
+#icon h1,
+.en_app {
+  font-family: 'Source Serif Pro', serif;
+}
+
+.ja,
+.ja_app {
+  font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+.ja_app {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-shadow: -1px 1px 0 #fff;
+  text-shadow: -2px 2px 0 #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  transition: 2.5s all;
+}
+
+a:hover {
+  color: red;
+  cursor: pointer;
+  transition: 1.5s all;
+}
+
+h3 a {
+  border: 1px solid;
+  border-radius: 0.25rem;
+  margin: 0 0.25rem 0.5rem 0;
+  padding: 0.1rem 0.5rem;
+}
+
+#icon {
+  position: relative;
+  margin: 2.5rem auto;
+  width: 80%;
+  height: 75vh;
+  max-width: 550px;
+  max-height: 75vw;
+}
+
+#icon h1 {
+  font-size: 3rem;
+  padding: 1rem 2.5rem 1rem 1rem;
+  letter-spacing: 0.1rem;
+}
+
+#icon b {
+  font-weight:900;
+}
+
+#icon u {
+  font-weight:600;
+}
+
+#icon i {
+  letter-spacing:0.15rem;
+}
+
+@media screen and (max-width: 750px) {
+
+  #icon {
+    margin: 5% auto;
+  }
+
+  #icon h1 {
+    font-size: 5.5vw;
+    letter-spacing:0.1vw;
+  }
+
+  #icon i {
+    letter-spacing:0.25vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #icon h1 {
+    font-size: 7.5vw;
+    letter-spacing:0.25vw;
+  }
+
+  #icon i {
+    letter-spacing:0.5vw;
+  }
+}
+
+#main h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#main h3 {
+  font-size: 1.1rem;
+  line-height: 200%;
+  font-weight: 500;
+}
+
+.ja_app,
+.en_app,
+.other_app {
+  position: relative;
+}
+
+.ja_app {
+  display: flex;
+  font-size: 0.8rem;
+  line-height: 200%;
+  padding: 7.5% 5% 15% 15%;
+  margin: auto;
+  height: 90vh;
+  width: 75%;
+  max-width: 1000px;
+  max-height: 45rem;
+  overflow: auto;
+}
+
+.en_app,
+#buynow {
+  font-size: 0.9rem;
+  width: 90%;
+  text-shadow: 1px 1px 0 #fff;
+  text-shadow: 2px 2px 0 #fff;
+}
+
+.en_app {
+  padding: 5%;
+  margin: 2.5% auto 15%;
+  max-width: 45rem;
+}
+
+#buynow {
+  padding: 2.5% 0;
+  margin: 2.5% auto 10%;
+  max-width: 50rem;
+}
+
+#footer {
+  position: fixed;
+  bottom:-100vh;
+  left:0;
+  z-index: 100;
+  text-shadow: 1px 1px 0 #fff;
+  text-shadow: 2px 2px 0 #fff;
+}
+
+@media screen and (min-width: 750px) {
+  .ja_app {
+    padding: 4rem 2.5rem 7.5rem 7.5rem;
+  }
+
+  .en_app {
+    padding: 2.5rem;
+    margin: 1rem auto 5rem;
+  }
+
+  #buynow {
+    padding: 1rem 0;
+    margin: 1rem auto 5rem;
+  }
+}

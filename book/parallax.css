@@ -1,0 +1,73 @@
+#parallax,
+#parallax li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#parallax li {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  max-width: 500px;
+  max-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cover {
+  background-image: url(img/book.png);
+  background-size: 100%;
+  top: 45vh;
+  right: 2.5%;
+  z-index: -1;
+}
+
+.a {
+  background-image: url(img/000.jpg);
+  background-size: 100%;
+  left: 0;
+  z-index: -3;
+}
+
+.b {
+  background-image: url(img/004.JPG);
+  background-size: 100%;
+  right: 15%;
+  z-index: -2;
+}
+
+.c {
+  background-image: url(img/005.JPG);
+  background-size: 75%;
+  left: 0%;
+  z-index: -1;
+}
+
+.d {
+  background-image: url(img/006.JPG);
+  background-size: 90%;
+  right: 20%;
+  z-index: -4;
+}
+
+.e {
+  background-image: url(img/007.JPG);
+  background-size: 100%;
+  left: 10%;
+  z-index: -4;
+}
+
+.f {
+  background-image: url(img/008.JPG);
+  background-size: 100%;
+  right: 30%;
+  z-index: -3;
+}
+
+.g {
+  background-image: url(img/009.JPG);
+  background-size: 125%;
+  left: 25%;
+  z-index: -5;
+}
