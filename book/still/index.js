@@ -7,6 +7,7 @@ async function populate() {
 
   const topicIndex = JSON.parse(indexJson);
   indexHeader(topicIndex);
+  indexObject(topicIndex);
 }
 
 function indexHeader(obj) {
@@ -52,6 +53,22 @@ function indexHeader(obj) {
   twitterIMG.setAttribute("name", "twitter:image");
   twitterIMG.setAttribute("content", `${obj.site_name}${obj.url}${obj.img}`);
   head.appendChild(twitterIMG);
+}
+
+function indexObject(obj) {
+  const distribute = document.querySelector('#buynow h3');
+  const itemDistribute = obj.distribute;
+
+  for (const item of itemDistribute) {
+    const distributeA = document.createElement('a');
+    distributeA.setAttribute("class", "ja");
+    distributeA.setAttribute("target", "_blank");
+    distributeA.setAttribute("href", item.link);
+    distributeA.textContent = item.to;
+    distributeA.style.display = item.display;
+
+    distribute.appendChild(distributeA);
+  }
 }
 
 populate();
