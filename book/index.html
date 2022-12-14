@@ -11,6 +11,8 @@
   <meta name="twitter:site" content="@pe_hu_" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="parallax.css" />
+  <link rel="stylesheet" href="still/style.css" />
+  <link rel="stylesheet" href="still/scrollable.css" />
   <link rel="stylesheet" href="../index/icon.css" />
   <link rel="stylesheet" href="../online/value.css" />
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
@@ -115,23 +117,29 @@
       <h3></h3>
     </div>
     <script src="index.js"></script>
+
+    <ul class="mousedragscrollable">
+      <li>
+        <h1 class="title">
+          this is a
+          <u>advertisement</u>
+          for
+          <i>the book</i>
+          for<br/>
+          <b>valuing an act of valuing</b>
+        </h1>
+      </li>
+      <img src="img/003.png" height="97.5%">
+      <li>
+        <div class="title">
+          <b class="ja">大切にすることを大切にするための本のチラシ</b>
+          <p class="ja">この印刷物には、「大切にすることを大切にするための本」に収録したエピソードの英題とそれらに関連するいくつかの写真を掲載しています。</p>
+          <p class="ja">また、この印刷物を「大切にすることを大切にするための本」のブックカバーとしてもご使用いただけます。</p>
+        </div>
+      </li>
+    </ul>
+    <script src="still/scrollable.js"></script>
   </main>
-  <!--
-  <div id="icon">
-  <p class="ja"><b>大切にすることを大切にするための本のチラシ</b></p>
-  <h1>
-  this is a
-  <u>advertisement</u>
-  for
-  <i>the book</i>
-  for<br/>
-  <b>valuing an act of valuing</b>
-</h1>
-<p class="ja">この印刷物には、「大切にすることを大切にするための本」に収録したエピソードの英題とそれらに関連するいくつかの写真を掲載しています。</p>
-<p class="ja">また、この印刷物を「大切にすることを大切にするための本」のブックカバーとしてもご使用いただけます。</p>
-</div>
-<img src="img/003.jpg" width="100%" style="display:block; margin:0;">
--->
 
   <section id="parallax">
     <span class="img_book"></span>
@@ -156,8 +164,8 @@
     Price: <b>1500</b> JPY (+tax)
   </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
   $(window).bind('scroll',function(e){
     parallaxScroll();
   });
