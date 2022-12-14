@@ -1,6 +1,5 @@
 #icon {
   box-sizing: border-box;
-  font-family: 'Source Serif Pro', serif;
   margin: 2.5rem auto;
   width: 95%;
   height: 75vh;
@@ -32,10 +31,9 @@
   #icon {
     margin: 5% auto;
   }
-
+  
   #icon h1 {
     font-size: 7.5vw;
-    padding: 2.5% 5% 2.5% 2.5%;
     letter-spacing:0.25vw;
   }
 

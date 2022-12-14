@@ -6,11 +6,11 @@ async function populate() {
   const indexJson = await response.text();
 
   const topicIndex = JSON.parse(indexJson);
-  updateHeader(topicIndex);
-  updateObject(topicIndex);
+  indexHeader(topicIndex);
+  indexObject(topicIndex);
 }
 
-function updateHeader(obj) {
+function indexHeader(obj) {
   const head = document.querySelector('head');
   const titleValue = document.createElement('title');
   const valueIndex = "https://creative-community.space/value/"
@@ -54,8 +54,8 @@ function updateHeader(obj) {
   head.appendChild(twitterIMG);
 }
 
-function updateObject(obj) {
-  const topic = document.querySelector('#update');
+function indexObject(obj) {
+  const topic = document.querySelector('#topic');
   const itemTopic = obj.topics;
 
   for (const item of itemTopic) {

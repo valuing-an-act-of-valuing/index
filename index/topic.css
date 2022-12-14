@@ -1,0 +1,80 @@
+#what a,
+#you {
+  color: #000;
+  text-decoration: none;
+  transition: 2.5s all;
+}
+
+#what a:hover,
+#you:hover  {
+  color: red;
+  transition: 1s all;
+}
+
+#what a {
+  border-left: solid 1px red;
+  padding-left: 0.5em;
+}
+
+#what a:hover  {
+  border-left: solid 1px #000;
+}
+
+#topic {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 2.5rem;
+}
+
+#topic div {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+#topic div .tt,
+#topic div .link {
+  font-size: 125%;
+}
+
+#topic div .tt b {
+  line-height: 200%;
+  font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+
+}
+
+#topic div .link a {
+  color: #000;
+  border: 1px solid;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  transition: 2.5s all;
+}
+
+#topic div .link a:hover {
+  color: #fff;
+  background-color: red;
+  transition: 1.5s all;
+}
+
+#topic img {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  width: auto;
+  height: auto;
+  max-width: 10rem;
+  max-height: 10rem;
+  pointer-events: none;
+  user-select: none;
+  filter: blur(0.5rem);
+  -webkit-filter: blur(0.5rem);
+  transition: all 2500ms ease;
+}
+
+#topic div:hover img {
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  transition: all 1000ms ease;
+}

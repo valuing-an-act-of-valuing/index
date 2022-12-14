@@ -38,11 +38,20 @@ a:hover {
   transition: 1.5s all;
 }
 
+h1 a {
+  border: 1px solid;
+  border-radius: 0.5rem;
+  display: block;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: 0 auto 5rem;
+}
+
 h3 a {
   border: 1px solid;
   border-radius: 0.25rem;
-  margin: 0 0.25rem 0.5rem 0;
   padding: 0.1rem 0.5rem;
+  margin: 0 0.25rem 0.5rem 0;
 }
 
 #icon {
@@ -78,17 +87,6 @@ h3 a {
     margin: 5% auto;
   }
 
-  #icon h1 {
-    font-size: 5.5vw;
-    letter-spacing:0.1vw;
-  }
-
-  #icon i {
-    letter-spacing:0.25vw;
-  }
-}
-
-@media screen and (max-width: 550px) {
   #icon h1 {
     font-size: 7.5vw;
     letter-spacing:0.25vw;
