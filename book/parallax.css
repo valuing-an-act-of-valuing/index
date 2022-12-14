@@ -6,8 +6,8 @@
   margin: 0;
 }
 
-#parallax,
-#parallax li {
+body,
+#parallax {
   width: 100%;
   overflow-x: hidden;
 }
