@@ -32,6 +32,105 @@
       "qty" : "5",
       "display" : "",
       "memo" : ""
+    },
+    {
+      "type" : "委託",
+      "to" : "新宿眼下画廊",
+      "link" : "https://www.gankagarou.com/",
+      "date" : "2020-01-13",
+      "qty" : "5",
+      "display" : "",
+      "memo" : "2022/03/15 清算済み"
+    },
+    {
+      "type" : "買取",
+      "to" : "IACK",
+      "link" : "https://www.iack.online/",
+      "date" : "2020-01-16",
+      "qty" : "8",
+      "display" : "",
+      "memo" : ""
+    },
+    {
+      "type" : "買取",
+      "to" : "琥珀",
+      "link" : "https://www.instagram.com/antiques_kohaku/",
+      "date" : "2020-01-16",
+      "qty" : "3",
+      "display" : "",
+      "memo" : ""
+    },
+    {
+      "type" : "委託",
+      "to" : "琥珀",
+      "link" : "https://www.instagram.com/antiques_kohaku/",
+      "date" : "2020-01-16",
+      "qty" : "5",
+      "display" : "none",
+      "memo" : ""
+    },
+    {
+      "type" : "買取",
+      "to" : "BnA Alter Museum",
+      "link" : "https://bnaaltermuseum.com/",
+      "date" : "2020-01-25",
+      "qty" : "14",
+      "display" : "",
+      "memo" : ""
+    },
+    {
+      "type" : "委託",
+      "to" : "BnA Alter Museum",
+      "link" : "https://bnaaltermuseum.com/",
+      "date" : "2020-01-25",
+      "qty" : "1",
+      "display" : "none",
+      "memo" : "清算済み"
+    },
+    {
+      "type" : "委託",
+      "to" : "itohen",
+      "link" : "http://itohen.info/",
+      "date" : "2020-03-23",
+      "qty" : "5",
+      "display" : "",
+      "memo" : ""
+    },
+    {
+      "type" : "買取",
+      "to" : "FOLK old book store",
+      "link" : "http://www.folkbookstore.com/",
+      "date" : "2020-10-31",
+      "qty" : "3",
+      "display" : "",
+      "memo" : ""
+    },
+    {
+      "type" : "委託",
+      "to" : "本屋青旗",
+      "link" : "https://aohatabooks.com/",
+      "date" : "2021-07-19",
+      "qty" : "5",
+      "display" : "",
+      "memo" : "2022/03/04 清算済み"
+    },
+    {
+      "type" : "買取",
+      "to" : "dot to dot today",
+      "link" : "https://dottodot.today/",
+      "date" : "2022/1/29",
+      "qty" : "3",
+      "display" : "",
+      "memo" : ""
+    },
+    {
+      "type" : "買取",
+      "to" : "本屋青旗",
+      "link" : "https://aohatabooks.com/",
+      "date" : "2022/3/15",
+      "qty" : "5",
+      "display" : "none",
+      "memo" : ""
     }
   ]
 }

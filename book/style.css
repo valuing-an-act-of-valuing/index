@@ -39,8 +39,8 @@ a:hover {
 }
 
 h1 a {
-  border: 1px solid;
-  border-radius: 0.5rem;
+  border: 2px solid;
+  border-radius: 5rem;
   display: block;
   text-align: center;
   padding: 0.5rem 1rem;
