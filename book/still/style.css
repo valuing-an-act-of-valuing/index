@@ -1,0 +1,29 @@
+.img_000 {
+  background-image: url(img/000.jpg);
+  background-position: 50% 75%;
+  background-size: 90%;
+}
+
+.img_png {
+  background-image: url(img/000.png);
+  background-position: 50% 50%;
+  background-size: 100%;
+}
+
+.img_001 {
+  background-image: url(img/001.jpg);
+  background-position: 50% 50%;
+  background-size: 80%;
+}
+
+.img_002 {
+  background-image: url(img/002.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.img_003 {
+  background-image: url(img/003.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
