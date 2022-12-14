@@ -1,22 +1,3 @@
-:root {
-  --main-font: 'Source Serif Pro', serif;
-  --sub-font: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-  --bg-color: #fff;
-  --text-color: #000;
-  --sub-color: #fff7;
-}
-
-.mousedragscrollable h1,
-.mousedragscrollable h2,
-.mousedragscrollable .main {
-  font-family: var(--main-font);
-}
-
-.mousedragscrollable p,
-.mousedragscrollable .sub {
-  font-family: var(--sub-font);
-}
-
 .img_000 {
   background-image: url(img/000.jpg);
   background-position: 50% 75%;
@@ -45,6 +26,25 @@
   background-image: url(img/003.jpg);
   background-position: 50% 50%;
   background-size: cover;
+}
+
+:root {
+  --main-font: 'Source Serif Pro', serif;
+  --sub-font: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  --bg-color: #fff;
+  --text-color: #000;
+  --sub-color: #fff7;
+}
+
+.mousedragscrollable h1,
+.mousedragscrollable h2,
+.mousedragscrollable .main {
+  font-family: var(--main-font);
+}
+
+.mousedragscrollable p,
+.mousedragscrollable .sub {
+  font-family: var(--sub-font);
 }
 
 .mousedragscrollable .title {
