@@ -115,7 +115,9 @@ if (!empty($_POST['btn_confirm'])) {
 	<?php if ($page_flag === 1) : ?>
 		<form id="confirme" action="" method="post">
 			<div id="what">
-				<b><?php echo $_POST['title']; ?></b>
+				<b class="<?php echo $_POST['language']; ?>">
+					<?php echo $_POST['title']; ?>
+				</b>
 			</div>
 			<div id="you">
 				<?php echo $_POST['name']; ?>

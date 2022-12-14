@@ -11,8 +11,9 @@
   <meta name="twitter:site" content="@pe_hu_" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="parallax.css" />
+  <link rel="stylesheet" href="../index/icon.css" />
+  <link rel="stylesheet" href="../online/value.css" />
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
-  <script src="index.js"></script>
 </head>
 
 <body>
@@ -113,33 +114,35 @@
       <h2>Distribute</h2>
       <h3></h3>
     </div>
+    <script src="index.js"></script>
   </main>
-<!--
+  <!--
   <div id="icon">
-    <p class="ja"><b>大切にすることを大切にするための本のチラシ</b></p>
-    <h1>
-      this is a
-      <u>advertisement</u>
-      for
-      <i>the book</i>
-      for<br/>
-      <b>valuing an act of valuing</b>
-    </h1>
-    <p class="ja">この印刷物には、「大切にすることを大切にするための本」に収録したエピソードの英題とそれらに関連するいくつかの写真を掲載しています。</p>
-    <p class="ja">また、この印刷物を「大切にすることを大切にするための本」のブックカバーとしてもご使用いただけます。</p>
-  </div>
-  <img src="img/003.jpg" width="100%" style="display:block; margin:0;">
+  <p class="ja"><b>大切にすることを大切にするための本のチラシ</b></p>
+  <h1>
+  this is a
+  <u>advertisement</u>
+  for
+  <i>the book</i>
+  for<br/>
+  <b>valuing an act of valuing</b>
+</h1>
+<p class="ja">この印刷物には、「大切にすることを大切にするための本」に収録したエピソードの英題とそれらに関連するいくつかの写真を掲載しています。</p>
+<p class="ja">また、この印刷物を「大切にすることを大切にするための本」のブックカバーとしてもご使用いただけます。</p>
+</div>
+<img src="img/003.jpg" width="100%" style="display:block; margin:0;">
 -->
-  <ul id="parallax">
-    <li class="img_book"></li>
-    <li class="img_000"></li>
-    <li class="img_004"></li>
-    <li class="img_005"></li>
-    <li class="img_006"></li>
-    <li class="img_007"></li>
-    <li class="img_008"></li>
-    <li class="img_009"></li>
-  </ul>
+
+  <section id="parallax">
+    <span class="img_book"></span>
+    <span class="img_000"></span>
+    <span class="img_004"></span>
+    <span class="img_005"></span>
+    <span class="img_006"></span>
+    <span class="img_007"></span>
+    <span class="img_008"></span>
+    <span class="img_009"></span>
+  </section>
 
   <footer id="footer">
     title: <b>the book for valuing an act of valuing</b>
@@ -153,50 +156,51 @@
     Price: <b>1500</b> JPY (+tax)
   </footer>
 
-  <div id="what" class="ja"></div>
-  <a id="you" href="#" onclick="window.history.back(); return false;">↩︎</a>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
   $(window).bind('scroll',function(e){
     parallaxScroll();
   });
   function parallaxScroll(){
     var scrolled = $(window).scrollTop();
-    $('.img_book').css('bottom', ( 5 - (scrolled * -.025) ) + 'vh');
-    $('.img_000').css('top', ( 110 - (scrolled * -.025) ) + 'vh');
-    $('.img_004').css('left', ( 125 - (scrolled * .095) ) + '%');
+    $('.img_book').css('top', ( 25 - (scrolled * -.055) ) + 'vh');
+    $('.img_000').css('top', ( 100 - (scrolled * -.025) ) + 'vh');
+    $('.img_004').css('top', ( 200 - (scrolled * .095) ) + 'vh');
     $('.img_005').css('top', ( 275 - (scrolled * .075) ) + 'vh');
-    $('.img_006').css('right', ( 100 - (scrolled * .055) ) + '%');
-    $('.img_007').css('top', ( 275 - (scrolled * .055) ) + 'vh');
-    $('.img_008').css('top', ( 300 - (scrolled * .123) ) + 'vh');
+    $('.img_006').css('top', ( 250 - (scrolled * .1) ) + 'vh');
+    $('.img_007').css('top', ( 275 - (scrolled * .05) ) + 'vh');
+    $('.img_008').css('top', ( 300 - (scrolled * .111) ) + 'vh');
     $('.img_009').css('top', ( 250 - (scrolled * .01) ) + 'vh');
   };
-  </script>
+</script>
 
-  <script type="text/javascript">
-  jQuery(function() {
-    var appear = false;
-    var footer = $('#footer');
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 1500) {  //1500pxスクロールしたら
-        if (appear == false) {
-          appear = true;
-          footer.stop().animate({
-            'bottom': '0' //表示場所
-          }, 2500); //表示速度
-        }
-      } else {
-        if (appear) {
-          appear = false;
-          footer.stop().animate({
-            'bottom': '-100vh' //　隠す場所
-          }, 1500); //　隠す速度
-        }
+<script type="text/javascript">
+jQuery(function() {
+  var appear = false;
+  var footer = $('#footer');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1250) {  //1250pxスクロールしたら
+      if (appear == false) {
+        appear = true;
+        footer.stop().animate({
+          'bottom': '0' //表示場所
+        }, 2500); //表示速度
       }
-    });
+    } else {
+      if (appear) {
+        appear = false;
+        footer.stop().animate({
+          'bottom': '-100vh' //　隠す場所
+        }, 1500); //　隠す速度
+      }
+    }
   });
-  </script>
+});
+</script>
+
+<div id="what" class="ja"></div>
+<a id="back" href="#" onclick="window.history.back(); return false;">↩︎</a>
+
 </body>
 
 </html>

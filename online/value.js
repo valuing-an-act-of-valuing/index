@@ -50,4 +50,10 @@ valueCSS.href = "https://creative-community.space/value/online/value.css";
 valueCSS.type = "text/css";
 valueCSS.rel = "stylesheet";
 
+const fontSourceSerifPro = document.createElement( "link" );
+fontSourceSerifPro.href = "https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap";
+fontSourceSerifPro.type = "text/css";
+fontSourceSerifPro.rel = "stylesheet";
+
 document.getElementsByTagName("head")[0].appendChild(valueCSS);
+document.getElementsByTagName("head")[0].appendChild(fontSourceSerifPro);

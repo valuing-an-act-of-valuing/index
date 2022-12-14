@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="parallax.css" />
+</head>
+
+<body>
+  <section id="parallax">
+    <span class="img_book"></span>
+    <span class="img_000"></span>
+    <span class="img_004"></span>
+    <span class="img_005"></span>
+    <span class="img_006"></span>
+    <span class="img_007"></span>
+    <span class="img_008"></span>
+    <span class="img_009"></span>
+  </section>
+
+  <footer id="footer">
+    title: <a href="/value/book/">the book for valuing an act of valuing</a>
+    <p>
+      B6 size (128×182mm)
+      <br/>134 pages
+      <br/>300 copies
+      <br/>Bilingual (Japanese / English)
+      <br/>First Edition on November 23th 2019
+    </p>
+    Price: <b>1500</b> JPY (+tax)
+  </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(window).bind('scroll',function(e){
+    parallaxScroll();
+  });
+  function parallaxScroll(){
+    var scrolled = $(window).scrollTop();
+    $('.img_book').css('top', ( 25 - (scrolled * -.055) ) + 'vh');
+    $('.img_000').css('top', ( 100 - (scrolled * -.025) ) + 'vh');
+    $('.img_004').css('top', ( 200 - (scrolled * .095) ) + 'vh');
+    $('.img_005').css('top', ( 275 - (scrolled * .075) ) + 'vh');
+    $('.img_006').css('top', ( 250 - (scrolled * .1) ) + 'vh');
+    $('.img_007').css('top', ( 275 - (scrolled * .05) ) + 'vh');
+    $('.img_008').css('top', ( 300 - (scrolled * .111) ) + 'vh');
+    $('.img_009').css('top', ( 250 - (scrolled * .01) ) + 'vh');
+  };
+</script>
+
+<script type="text/javascript">
+jQuery(function() {
+  var appear = false;
+  var footer = $('#footer');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1250) {  //1250pxスクロールしたら
+      if (appear == false) {
+        appear = true;
+        footer.stop().animate({
+          'bottom': '0' //表示場所
+        }, 2500); //表示速度
+      }
+    } else {
+      if (appear) {
+        appear = false;
+        footer.stop().animate({
+          'bottom': '-100vh' //　隠す場所
+        }, 1500); //　隠す速度
+      }
+    }
+  });
+});
+</script>
+</body>
+
+</html>
