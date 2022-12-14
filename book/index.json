@@ -1,0 +1,37 @@
+{
+  "title" : "大切にすることを大切にするための本",
+  "author" : "クリエイティブ・コミュニティスペース ペフ",
+  "description" : "the book for valuing an act of valuing",
+  "site_name" : "https://creative-community.space/value/",
+  "url" : "book/",
+  "img" : "img/book.png",
+  "distribute" : [
+    {
+      "type" : "委託",
+      "to" : "TRANS BOOKS",
+      "link" : "https://archive.transbooks.center/2019/",
+      "date" : "2019-11-23",
+      "qty" : "28",
+      "display" : "",
+      "memo" : "清算済み"
+    },
+    {
+      "type" : "買取",
+      "to" : "DOMA",
+      "link" : "https://doma.stores.jp/",
+      "date" : "2019-11-23",
+      "qty" : "5",
+      "display" : "",
+      "memo" : ""
+    },
+    {
+      "type" : "買取",
+      "to" : "VOU / 棒",
+      "link" : "http://voukyoto.com/",
+      "date" : "2020-01-13",
+      "qty" : "5",
+      "display" : "",
+      "memo" : ""
+    }
+  ]
+}
