@@ -154,6 +154,8 @@ h3 a {
   bottom:-100vh;
   left:0;
   z-index: 100;
+  pointer-events: none;
+  user-select: none;
   text-shadow: 1px 1px 0 #fff;
   text-shadow: 2px 2px 0 #fff;
 }
