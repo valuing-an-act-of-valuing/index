@@ -114,6 +114,7 @@
       <h3></h3>
     </div>
   </main>
+<!--
   <div id="icon">
     <p class="ja"><b>大切にすることを大切にするための本のチラシ</b></p>
     <h1>
@@ -124,24 +125,24 @@
       for<br/>
       <b>valuing an act of valuing</b>
     </h1>
-    <p class="ja">この印刷物には、「大切にすることを大切にするための本」に収録したエピソードの題名とそれらに関連するいくつかの写真を掲載しています。</p>
-    <p class="ja">また、この印刷物は「大切にすることを大切にするための本」のブックカバーとしてもご使用いただけます。</p>
+    <p class="ja">この印刷物には、「大切にすることを大切にするための本」に収録したエピソードの英題とそれらに関連するいくつかの写真を掲載しています。</p>
+    <p class="ja">また、この印刷物を「大切にすることを大切にするための本」のブックカバーとしてもご使用いただけます。</p>
   </div>
   <img src="img/003.jpg" width="100%" style="display:block; margin:0;">
-
+-->
   <ul id="parallax">
-    <li class="cover"></li>
-    <li class="a"></li>
-    <li class="b"></li>
-    <li class="c"></li>
-    <li class="d"></li>
-    <li class="e"></li>
-    <li class="f"></li>
-    <li class="g"></li>
+    <li class="img_book"></li>
+    <li class="img_000"></li>
+    <li class="img_004"></li>
+    <li class="img_005"></li>
+    <li class="img_006"></li>
+    <li class="img_007"></li>
+    <li class="img_008"></li>
+    <li class="img_009"></li>
   </ul>
 
   <footer id="footer">
-    title: <b class="ja">大切にすることを大切にするための本</b>
+    title: <b>the book for valuing an act of valuing</b>
     <p>
       B6 size (128×182mm)
       <br/>134 pages
@@ -152,6 +153,9 @@
     Price: <b>1500</b> JPY (+tax)
   </footer>
 
+  <div id="what" class="ja"></div>
+  <a id="you" href="#" onclick="window.history.back(); return false;">↩︎</a>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
   $(window).bind('scroll',function(e){
@@ -159,33 +163,35 @@
   });
   function parallaxScroll(){
     var scrolled = $(window).scrollTop();
-    $('.cover').css('top', ( 45 - (scrolled * -.075) ) + 'vh');
-    $('.a').css('top', ( 100 - (scrolled * -.025) ) + 'vh');
-    $('.b').css('top', ( 200 - (scrolled * .095) ) + 'vh');
-    $('.c').css('top', ( 275 - (scrolled * .075) ) + 'vh');
-    $('.d').css('top', ( 250 - (scrolled * .111) ) + 'vh');
-    $('.e').css('top', ( 275 - (scrolled * .055) ) + 'vh');
-    $('.f').css('top', ( 300 - (scrolled * .123) ) + 'vh');
-    $('.g').css('top', ( 250 - (scrolled * .01) ) + 'vh');
+    $('.img_book').css('bottom', ( 5 - (scrolled * -.025) ) + 'vh');
+    $('.img_000').css('top', ( 110 - (scrolled * -.025) ) + 'vh');
+    $('.img_004').css('left', ( 125 - (scrolled * .095) ) + '%');
+    $('.img_005').css('top', ( 275 - (scrolled * .075) ) + 'vh');
+    $('.img_006').css('right', ( 100 - (scrolled * .055) ) + '%');
+    $('.img_007').css('top', ( 275 - (scrolled * .055) ) + 'vh');
+    $('.img_008').css('top', ( 300 - (scrolled * .123) ) + 'vh');
+    $('.img_009').css('top', ( 250 - (scrolled * .01) ) + 'vh');
   };
+  </script>
 
+  <script type="text/javascript">
   jQuery(function() {
     var appear = false;
-    var pagetop = $('#footer');
+    var footer = $('#footer');
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 1500) {  //100pxスクロールしたら
+      if ($(this).scrollTop() > 1500) {  //1500pxスクロールしたら
         if (appear == false) {
           appear = true;
-          pagetop.stop().animate({
-            'bottom': '0'
-          }, 2500);
+          footer.stop().animate({
+            'bottom': '0' //表示場所
+          }, 2500); //表示速度
         }
       } else {
         if (appear) {
           appear = false;
-          pagetop.stop().animate({
-            'bottom': '-100vh'
-          }, 1500);
+          footer.stop().animate({
+            'bottom': '-100vh' //　隠す場所
+          }, 1500); //　隠す速度
         }
       }
     });

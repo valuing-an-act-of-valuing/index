@@ -9,6 +9,7 @@ body,
   font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
+#what,
 .ja_app {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
@@ -97,6 +98,27 @@ h3 a {
   }
 }
 
+#what,
+#you,
+#footer  {
+  position: fixed;
+  z-index: 100;
+}
+
+#what {
+  top: 0;
+  right: 0;
+  font-size: 0.9rem;
+  margin: 7.5% 2.5% 2.5%;
+}
+
+#you {
+  bottom: 0;
+  right: 0;
+  font-size: 250%;
+  margin: 0 2.5%;
+}
+
 #main h2 {
   font-size: 1.2rem;
   font-weight: 500;
@@ -148,10 +170,8 @@ h3 a {
 }
 
 #footer {
-  position: fixed;
   bottom:-100vh;
   left:0;
-  z-index: 100;
   pointer-events: none;
   user-select: none;
   text-shadow: 1px 1px 0 #fff;
@@ -159,6 +179,14 @@ h3 a {
 }
 
 @media screen and (min-width: 750px) {
+  #what {
+    margin: 3.33rem 1rem 1rem;
+  }
+
+  #you {
+    margin: 0 1rem;
+  }
+
   .ja_app {
     padding: 4rem 2.5rem 7.5rem 7.5rem;
   }

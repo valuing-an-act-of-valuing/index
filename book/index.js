@@ -16,6 +16,9 @@ function indexHeader(obj) {
   titleValue.textContent = obj.title;
   head.appendChild(titleValue);
 
+  const what = document.querySelector('#what');
+  what.innerText = obj.title;
+
   const authorValue = document.createElement( "meta" );
   authorValue.setAttribute("name", "author");
   authorValue.setAttribute("content", obj.author);

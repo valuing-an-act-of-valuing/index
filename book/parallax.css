@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 #parallax,
 #parallax li {
   list-style: none;
@@ -15,57 +18,57 @@
   background-repeat: no-repeat;
 }
 
-.cover {
+.img_book {
   background-image: url(img/book.png);
   background-size: 100%;
-  top: 45vh;
+  bottom: 5vh;
   right: 2.5%;
   z-index: -1;
 }
 
-.a {
+.img_000 {
   background-image: url(img/000.jpg);
   background-size: 100%;
   left: 0;
   z-index: -3;
 }
 
-.b {
+.img_004 {
   background-image: url(img/004.JPG);
   background-size: 100%;
-  right: 15%;
+  top: 150vh;
   z-index: -2;
 }
 
-.c {
+.img_005 {
   background-image: url(img/005.JPG);
   background-size: 75%;
   left: 0%;
   z-index: -1;
 }
 
-.d {
+.img_006 {
   background-image: url(img/006.JPG);
   background-size: 90%;
-  right: 20%;
+  top: 250vh;
   z-index: -4;
 }
 
-.e {
+.img_007 {
   background-image: url(img/007.JPG);
   background-size: 100%;
   left: 10%;
   z-index: -4;
 }
 
-.f {
+.img_008 {
   background-image: url(img/008.JPG);
   background-size: 100%;
   right: 30%;
   z-index: -3;
 }
 
-.g {
+.img_009 {
   background-image: url(img/009.JPG);
   background-size: 125%;
   left: 25%;
