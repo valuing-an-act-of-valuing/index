@@ -52,20 +52,4 @@ function indexHeader(obj) {
   head.appendChild(twitterIMG);
 }
 
-function indexObject(obj) {
-  const distribute = document.querySelector('#buynow h3');
-  const itemDistribute = obj.distribute;
-
-  for (const item of itemDistribute) {
-    const distributeA = document.createElement('a');
-    distributeA.setAttribute("class", "ja");
-    distributeA.setAttribute("target", "_blank");
-    distributeA.setAttribute("href", item.link);
-    distributeA.textContent = item.to;
-    distributeA.style.display = item.display;
-
-    distribute.appendChild(distributeA);
-  }
-}
-
 populate();
