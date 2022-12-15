@@ -5,15 +5,6 @@
   "img" : "icon.png",
   "topics" : [
     {
-      "news" : "大切にすることを大切にするためのギャラリー",
-      "as" : "this is a gallery for valuing an act of valuing",
-      "type" : "topic",
-      "link" : "/value/gallery/",
-      "more" : "size: 65 × 65 × 65 mm (inside: 59 × 59 × 59 mm)",
-      "img" : "block",
-      "src" : "img/000.png"
-    },
-    {
       "news" : "大切にすることを大切にするための本",
       "as" : "the book for valuing an act of valuing",
       "type" : "topic",
@@ -28,6 +19,15 @@
       "type" : "topic",
       "link" : "/value/book/still/",
       "more" : "First Edition May 30th 2020",
+      "img" : "block",
+      "src" : "img/000.png"
+    },
+    {
+      "news" : "大切にすることを大切にするためのギャラリー",
+      "as" : "this is a gallery for valuing an act of valuing",
+      "type" : "topic",
+      "link" : "/value/gallery/",
+      "more" : "size: 65 × 65 × 65 mm (inside: 59 × 59 × 59 mm)",
       "img" : "block",
       "src" : "img/000.png"
     }
