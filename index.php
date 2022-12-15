@@ -75,7 +75,6 @@
 
     <ul class="random"></ul>
     <script src="topic.js"></script>
-    <script src="gallery.js"></script>
     <script src="index.js"></script>
   </div>
 
