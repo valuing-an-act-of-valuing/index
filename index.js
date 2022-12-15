@@ -71,7 +71,7 @@ function indexObject(obj) {
     itemORG.setAttribute("data-appreciate", item.appreciate);
     itemP.textContent = item.date;
     itemSpan.textContent = item.name;
-    itemA.href = `${location.hostname}${location.pathname}${item.appreciate}${item.url}`;
+    itemA.href = `${location.pathname}${item.appreciate}${item.url}`;
 
     itemORG.appendChild(itemP);
     itemORG.appendChild(itemSpan);
