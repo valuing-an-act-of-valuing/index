@@ -9,14 +9,14 @@ body {
 #submit button,
 .thankyou h1,
 #btn_submit {
-  font-family: 'Source Serif Pro', serif;
+  font-family: var(--main-font);
   font-weight: 500;
 }
 
 input,
 textarea,
 .thankyou {
-  font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-family: var(--sub-font);
 }
 
 #title {

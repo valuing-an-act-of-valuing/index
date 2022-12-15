@@ -95,14 +95,24 @@ if (!empty($_POST['btn_confirm'])) {
 	<meta property="og:title" content="大切にすることを大切にするための場所" />
 	<meta property="og:description" content="あなたの大切なものは何ですか？" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://creative-community.space/value/online/" />
-	<meta property="og:image" content="https://creative-community.space/value/icon.png" />
 	<meta property="og:site_name" content="creative-community.space" />
+	<meta property="og:url" content="https://creative-community.space/value/online/" />
+	<meta property="og:image" content="https://creative-community.space/value/index/icon.png" />
 	<meta property="og:locale" content="ja_JP" />
 
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@pe_hu_" />
-	<meta name="twitter:image" content="https://creative-community.space/value/icon.png" />
+	<meta name="twitter:image" content="https://creative-community.space/value/index/icon.png" />
+
+  <style>
+  :root {
+    --main-font: 'Source Serif Pro', serif;
+    --sub-font: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    --bg-color: #fff;
+    --text-color: #000;
+    --sub-color: red;
+  }
+  </style>
 
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="value.css" />
