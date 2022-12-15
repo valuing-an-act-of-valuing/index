@@ -43,14 +43,22 @@ function indexHeader(obj) {
   const ogIMG = document.createElement( "meta" );
   const twitterIMG = document.createElement( "meta" );
   ogIMG.setAttribute("property", "og:image");
-  ogIMG.setAttribute("content", `${location.href}${obj.img}`);
+  ogIMG.setAttribute("content", `${location.href}${obj.cover}`);
   twitterIMG.setAttribute("name", "twitter:image");
-  twitterIMG.setAttribute("content", `${location.href}${obj.img}`);
+  twitterIMG.setAttribute("content", `${location.href}${obj.cover}`);
   head.appendChild(ogIMG);
   head.appendChild(twitterIMG);
 }
 
 function indexObject(obj) {
+  const images = obj.images;
+
+  for (const image of images) {
+    const `${image.type}_${image.src}` = document.createElement('.`${image.type}_${image.src}`');
+    `${image.type}_${image.src}`.style.backgroundImage = `url(${image.url}${image.src}.${image.type})`;
+    `${image.type}_${image.src}`.style.backgroundPosition = image.position;
+    `${image.type}_${image.src}`.style.backgroundSize = image.size;
+  }
 }
 
 populate();
