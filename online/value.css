@@ -1,6 +1,6 @@
-#online,
+.ja_app,
 #what,
-.ja_app {
+#online {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
 }
@@ -9,30 +9,49 @@
 .ja_app,
 #what,
 #online {
-  font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-family: var(--sub-font);
 }
 
 .en,
 .en_app,
 .other_app,
 #you {
-  font-family: 'Source Serif Pro', serif;
+  font-family: var(--main-font);
 }
 
 #what,
-#you,
 #online,
 .back {
-  position: fixed;
-  color: #000;
+  transition: color 2500ms ease;
   text-decoration: none;
+}
+
+#online:hover,
+.back:hover {
+  color: var(--sub-color);
+  cursor: pointer;
+  transition: color 1250ms ease;
+}
+
+#what,
+.ja_app,
+.en_app,
+.other_app {
+  font-size: 0.8rem;
+}
+
+#you,
+#what,
+#online,
+.back {
+  color: var(--text-color);
+  position: fixed;
   z-index: 100;
 }
 
 #what {
   top: 0;
   right: 0;
-  font-size: 0.8rem;
   margin: 5% 2.5% 2.5%;
 }
 
@@ -56,16 +75,15 @@
 .ja_app,
 .en_app,
 .other_app {
+  color: var(--text-color);
   position: relative;
   box-sizing: border-box;
-  font-size: 0.8rem;
 }
 
 .ja_app {
-  display: flex;
-  padding: 7.5% 5% 15% 15%;
+  padding: 7.5% 5% 15%;
   margin: auto;
-  height: 90vh;
+  height: 90%;
   width: 75%;
   max-width: 1000px;
   max-height: 50rem;
@@ -79,59 +97,48 @@
 }
 
 .en_app {
-  padding: 5%;
-  margin: 2.5% auto 15%;
+  padding: 2.5%;
+  margin: 5% auto 20%;
 }
 
 .other_app {
-  padding: 2.5% 5%;
-  margin: 2.5% auto 5%;
+  padding: 2.5%;
+  margin: 5% auto 7.5%;
 }
 
 @media screen and (min-width: 750px) {
   .ja_app {
-    padding: 4rem 2.5rem 7.5rem 7.5rem;
+    padding: 4rem 2.5rem 7.5rem;
   }
 
   .en_app {
-    padding: 2.5rem;
-    margin: 1rem auto 5rem;
+    padding: 1rem;
+    margin: 2.5rem auto 10rem;
   }
 
   .other_app {
-    padding: 1rem 2.5rem;
-    margin: 1rem auto 2.5rem;
+    padding: 1rem;
+    margin: 2.5rem auto 5rem;
   }
 }
 
 #image {
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   position: relative;
   z-index: 10;
   width: 75vw;
   height: 75vh;
   filter: blur(0.5rem);
   -webkit-filter: blur(0.5rem);
-  transition: all 2500ms ease;
+  transition: filter 2500ms ease;
 }
 
 #image:hover {
   filter: blur(0);
   -webkit-filter: blur(0);
-  transition: all 1000ms ease;
-}
-
-#image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  max-width: 90%;
-  max-height: 90%;
-  transform: translateY(-50%) translateX(-50%);
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  pointer-events: none;
-  user-select: none;
+  transition: filter 1000ms ease;
 }
 
 @media screen and (max-width: 550px) {
@@ -163,9 +170,11 @@
 }
 
 @media screen and (min-width: 750px) {
+
   #online {
     margin: 1rem;
   }
+
   .back {
     margin: 0 1rem;
   }

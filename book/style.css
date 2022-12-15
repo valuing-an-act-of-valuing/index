@@ -5,14 +5,16 @@
 
 .ja_app,
 #what {
-  text-shadow: -1px 1px 0 #fff;
-  text-shadow: -2px 2px 0 #fff;
+  text-shadow:
+  -1px -1px 0 #fff,
+  -2px -2px 0 #fff;
 }
 
 .en_app,
 #buynow {
-  text-shadow: 1px 1px 0 #fff;
-  text-shadow: 2px 2px 0 #fff;
+  text-shadow:
+  1px 1px 0 #fff,
+  2px 2px 0 #fff;
 }
 
 #footer {

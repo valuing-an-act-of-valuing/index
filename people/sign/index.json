@@ -1,7 +1,9 @@
 {
   "title" : "Sign",
   "author" : "∧° ┐ | creative, community space",
+  "site" : "https://creative-community.space/value/",
   "appreciate" : "people",
   "page" : "/sign/",
-  "img" : "000.png"
+  "img" : "block",
+  "src" : "000.png"
 }

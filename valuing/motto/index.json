@@ -1,7 +1,9 @@
 {
   "title" : "pe.hu",
   "author" : "Kazuma Sasajima",
+  "site" : "https://creative-community.space/value/",
   "appreciate" : "valuing",
   "page" : "/motto/",
-  "img" : "image.jpeg"
+  "img" : "block",
+  "src" : "image.jpeg"
 }

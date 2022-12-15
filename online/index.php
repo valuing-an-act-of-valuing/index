@@ -107,7 +107,9 @@ if (!empty($_POST['btn_confirm'])) {
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="stylesheet" type="text/css" href="value.css" />
 	<link rel="stylesheet" type="text/css" href="../index/icon.css" />
-	<link rel="icon" href="https://creative-community.space/value/icon.png">
+	<link rel="icon" href="https://creative-community.space/value/index/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 </head>
 

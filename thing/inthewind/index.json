@@ -1,7 +1,9 @@
 {
   "title" : "In The Wind",
   "author" : "Kazuma Sasajima",
+  "site" : "https://creative-community.space/value/",
   "appreciate" : "thing",
   "page" : "/inthewind/",
-  "img" : "image.jpg"
+  "img" : "block",
+  "src" : "image.jpg"
 }

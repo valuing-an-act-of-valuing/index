@@ -11,6 +11,7 @@ async function populate() {
 }
 
 function indexHeader(obj) {
+  const host = location.hostname;
   const head = document.querySelector('head');
   const titleIndex = document.createElement('title');
   titleIndex.textContent = obj.title;
@@ -38,22 +39,22 @@ function indexHeader(obj) {
 
   const ogSite = document.createElement( "meta" );
   ogSite.setAttribute("property", "og:site_name");
-  ogSite.setAttribute("content", obj.site);
+  ogSite.setAttribute("content", host);
   head.appendChild(ogSite);
 
   const ogURL = document.createElement( "meta" );
   ogURL.setAttribute("property", "og:url");
-  ogURL.setAttribute("content", `${obj.site}${obj.url}`);
+  ogURL.setAttribute("content", `host/${obj.href}`);
   head.appendChild(ogURL);
 
   const ogIMG = document.createElement( "meta" );
   ogIMG.setAttribute("property", "og:image");
-  ogIMG.setAttribute("content", `${obj.site}${obj.url}${obj.image}`);
+  ogIMG.setAttribute("content", `host/${obj.href}${obj.src}`);
   head.appendChild(ogIMG);
 
   const twitterIMG = document.createElement( "meta" );
   twitterIMG.setAttribute("name", "twitter:image");
-  twitterIMG.setAttribute("content", `${obj.site}${obj.url}${obj.image}`);
+  twitterIMG.setAttribute("content", `host/${obj.href}${obj.src}`);
   head.appendChild(twitterIMG);
 }
 
@@ -71,7 +72,7 @@ function indexObject(obj) {
     itemORG.setAttribute("data-appreciate", item.appreciate);
     itemP.textContent = item.date;
     itemSpan.textContent = item.name;
-    itemA.href = `${obj.site}${obj.url}${item.appreciate}${item.url}`;
+    itemA.href = `host/${obj.href}${item.appreciate}${item.url}`;
 
     itemORG.appendChild(itemP);
     itemORG.appendChild(itemSpan);

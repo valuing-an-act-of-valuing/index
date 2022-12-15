@@ -2,9 +2,8 @@
   "title" : "大切にすることを大切にするための場所",
   "author" : "∧°┐",
   "description" : "this is a space for valuing an act of valuing",
-  "site" : "https://creative-community.space",
-  "url" : "/value/",
-  "image" : "update/icon.png",
+  "href" : "/value/",
+  "src" : "update/icon.png",
   "org" : [
     {
       "date" : "pe.hu",
