@@ -66,7 +66,7 @@
     <ul>
       <li class="list_item" data-appreciate="topic">
         <p>あなたの大切なものは何ですか？</p>
-        <span>What do you value?</span>
+        <span>this is a entry form for valuing an act of valuing</span>
         <a href="/value/online/"></a>
       </li>
     </ul>
