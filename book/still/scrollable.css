@@ -11,6 +11,17 @@ body {
   color: var(--text-color);
 }
 
+a  {
+  color: var(--text-color);
+  background-blend-mode: difference;
+  text-decoration: none;
+  transition: 2.5s;
+}
+
+a:hover  {
+  filter: invert(.5);
+}
+
 body,
 .mousedragscrollable,
 .mousedragscrollable li {
@@ -214,5 +225,20 @@ body::-webkit-scrollbar,
   .mousedragscrollable .top,
   .mousedragscrollable .bottom {
     padding: 2.5vw;
+  }
+}
+
+#back  {
+  font-size: 250%;
+  margin: 2.5%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+
+@media screen and (min-width: 750px) {
+  #back {
+    margin: 1rem;
   }
 }
