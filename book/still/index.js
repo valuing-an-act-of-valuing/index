@@ -54,10 +54,10 @@ function indexObject(obj) {
   const images = obj.images;
 
   for (const image of images) {
-    const `${image.type}_${image.src}` = document.createElement('.`${image.type}_${image.src}`');
-    `${image.type}_${image.src}`.style.backgroundImage = `url(${image.url}${image.src}.${image.type})`;
-    `${image.type}_${image.src}`.style.backgroundPosition = image.position;
-    `${image.type}_${image.src}`.style.backgroundSize = image.size;
+    const background = document.createElement('.`${image.type}_${image.src}`');
+    background.style.backgroundImage = `url(${image.url}${image.src}.${image.type})`;
+    background.style.backgroundPosition = image.position;
+    background.style.backgroundSize = image.size;
   }
 }
 
