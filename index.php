@@ -39,11 +39,11 @@
         <input type="radio" name="appreciate" value="show" id="show">
         <label for="show" class="label">Show</label>
       </li>
+    -->
       <li>
         <input type="radio" name="appreciate" value="gallery" id="gallery">
         <label for="gallery" class="label">Gallery</label>
       </li>
-    -->
       <hr />
       <li>
         <input type="radio" name="appreciate" value="thing" id="thing">
@@ -75,6 +75,7 @@
 
     <ul class="random"></ul>
     <script src="topic.js"></script>
+    <script src="gallery.js"></script>
     <script src="index.js"></script>
   </div>
 
