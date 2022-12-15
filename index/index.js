@@ -13,7 +13,6 @@ async function populate() {
 function indexHeader(obj) {
   const head = document.querySelector('head');
   const titleValue = document.createElement('title');
-  const valueIndex = "https://creative-community.space/value/"
   titleValue.textContent = `${obj.title} by ${obj.author}`;
   head.appendChild(titleValue);
 
@@ -29,28 +28,32 @@ function indexHeader(obj) {
   head.appendChild(authorValue);
 
   const descriptionValue = document.createElement( "meta" );
+  const ogDescription = document.createElement('meta');
   descriptionValue.setAttribute("name", "description");
   descriptionValue.setAttribute("content", obj.description);
+  ogDescription.setAttribute("property", "og:description");
+  ogDescription.setAttribute("content", obj.description);
   head.appendChild(descriptionValue);
+  head.appendChild(ogDescription);
+
+  const ogSite = document.createElement( "meta" );
+  ogSite.setAttribute("property", "og:site_name");
+  ogSite.setAttribute("content", location.hostname);
+  head.appendChild(ogSite);
 
   const ogURL = document.createElement( "meta" );
   ogURL.setAttribute("property", "og:url");
-  ogURL.setAttribute("content", `${valueIndex}${obj.appreciate}${obj.page}`);
+  ogURL.setAttribute("content", location.href);
   head.appendChild(ogURL);
 
   const ogIMG = document.createElement( "meta" );
   ogIMG.setAttribute("property", "og:image");
-  ogIMG.setAttribute("content", `${valueIndex}${obj.appreciate}${obj.page}${obj.img}`);
+  ogIMG.setAttribute("content", `${location.href}${obj.img}`);
   head.appendChild(ogIMG);
-
-  const ogDescription = document.createElement('meta');
-  ogDescription.setAttribute("property", "og:description");
-  ogDescription.setAttribute("content", obj.description);
-  head.appendChild(ogDescription);
 
   const twitterIMG = document.createElement( "meta" );
   twitterIMG.setAttribute("name", "twitter:image");
-  twitterIMG.setAttribute("content", `${valueIndex}${obj.appreciate}${obj.page}${obj.img}`);
+  twitterIMG.setAttribute("content", `${location.href}${obj.img}`);
   head.appendChild(twitterIMG);
 }
 

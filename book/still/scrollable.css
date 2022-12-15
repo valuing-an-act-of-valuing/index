@@ -136,8 +136,8 @@ body::-webkit-scrollbar,
 }
 
 .mousedragscrollable .date {
-  right: 0;
   top: 2.5rem;
+  right: 2.5rem;
 }
 
 .mousedragscrollable .bottom {
@@ -181,6 +181,7 @@ body::-webkit-scrollbar,
 
   .mousedragscrollable .date {
     top: 5vw;
+    right: 5vw;
   }
 
   .mousedragscrollable .bottom {
