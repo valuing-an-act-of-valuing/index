@@ -25,33 +25,31 @@ function indexHeader(obj) {
   head.appendChild(authorValue);
 
   const descriptionValue = document.createElement( "meta" );
+  const ogDescription = document.createElement('meta');
   descriptionValue.setAttribute("name", "description");
   descriptionValue.setAttribute("content", obj.description);
+  ogDescription.setAttribute("property", "og:description");
+  ogDescription.setAttribute("content", obj.description);
   head.appendChild(descriptionValue);
+  head.appendChild(ogDescription);
 
   const ogSite = document.createElement( "meta" );
   ogSite.setAttribute("property", "og:site_name");
-  ogSite.setAttribute("content", obj.site_name);
+  ogSite.setAttribute("content", location.hostname);
   head.appendChild(ogSite);
 
   const ogURL = document.createElement( "meta" );
   ogURL.setAttribute("property", "og:url");
-  ogURL.setAttribute("content", `${obj.site_name}${obj.url}`);
+  ogURL.setAttribute("content", location.href);
   head.appendChild(ogURL);
 
   const ogIMG = document.createElement( "meta" );
-  ogIMG.setAttribute("property", "og:image");
-  ogIMG.setAttribute("content", `${obj.site_name}${obj.url}${obj.img}`);
-  head.appendChild(ogIMG);
-
-  const ogDescription = document.createElement('meta');
-  ogDescription.setAttribute("property", "og:description");
-  ogDescription.setAttribute("content", obj.description);
-  head.appendChild(ogDescription);
-
   const twitterIMG = document.createElement( "meta" );
+  ogIMG.setAttribute("property", "og:image");
+  ogIMG.setAttribute("content", `${location.href}${obj.img}`);
   twitterIMG.setAttribute("name", "twitter:image");
-  twitterIMG.setAttribute("content", `${obj.site_name}${obj.url}${obj.img}`);
+  twitterIMG.setAttribute("content", `${location.href}${obj.img}`);
+  head.appendChild(ogIMG);
   head.appendChild(twitterIMG);
 }
 
