@@ -50,8 +50,4 @@ function indexHeader(obj) {
   head.appendChild(twitterIMG);
 }
 
-function indexObject(obj) {
-  const images = obj.images;
-}
-
 populate();
