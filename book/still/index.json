@@ -2,5 +2,37 @@
   "title" : "今でも大切？",
   "author" : "クリエイティブ・コミュニティスペース ペフ",
   "description" : "大切なものをずっと大切にできますか？",
-  "cover" : "img/000.png"
+  "cover" : "img/000.png",
+  "images" : [
+    {
+      "class" : "jpg_000",
+      "src" : "img/000.jpg",
+      "position" : "50% 75%",
+      "size" : "90%"
+    },
+    {
+      "class" : "png_000",
+      "src" : "img/000.png",
+      "position" : "50% 50%",
+      "size" : "100%"
+    },
+    {
+      "class" : "img_001",
+      "src" : "img/001.jpg",
+      "position" : "50% 50%",
+      "size" : "80%"
+    },
+    {
+      "class" : "img_002",
+      "src" : "img/002.jpg",
+      "position" : "50% 50%",
+      "size" : "cover"
+    },
+    {
+      "class" : "img_003",
+      "src" : "img/003.jpg",
+      "position" : "50% 50%",
+      "size" : "cover"
+    }
+  ]
 }

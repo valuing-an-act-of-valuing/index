@@ -50,4 +50,15 @@ function indexHeader(obj) {
   head.appendChild(twitterIMG);
 }
 
+function indexObject(obj) {
+  const images = obj.images;
+
+  for (const image of images) {
+    const ${image.class} = document.querySelector('.${image.class}');
+    ${image.class}.style.backgroundImage = image.src;
+    ${image.class}.style.backgroundPosition = image.position;
+    ${image.class}.style.backgroundSize = image.size;
+  }
+}
+
 populate();
