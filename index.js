@@ -43,17 +43,17 @@ function indexHeader(obj) {
 
   const ogURL = document.createElement( "meta" );
   ogURL.setAttribute("property", "og:url");
-  ogURL.setAttribute("content", `${location.hostname}${location.pathname}`);
+  ogURL.setAttribute("content", location.href);
   head.appendChild(ogURL);
 
   const ogIMG = document.createElement( "meta" );
   ogIMG.setAttribute("property", "og:image");
-  ogIMG.setAttribute("content", `${location.hostname}${location.pathname}${obj.src}`);
+  ogIMG.setAttribute("content", `${location.href}${obj.src}`);
   head.appendChild(ogIMG);
 
   const twitterIMG = document.createElement( "meta" );
   twitterIMG.setAttribute("name", "twitter:image");
-  twitterIMG.setAttribute("content", `${location.hostname}${location.pathname}${obj.src}`);
+  twitterIMG.setAttribute("content", `${location.href}${obj.src}`);
   head.appendChild(twitterIMG);
 }
 
