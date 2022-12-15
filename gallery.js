@@ -20,7 +20,7 @@ function galleryObject(obj) {
     const showA = document.createElement('a');
 
     show.setAttribute("class", "list_item");
-    show.setAttribute("data-appreciate", item.type);
+    show.setAttribute("data-appreciate", "gallery";
     showP.textContent = item.name;
     showSpan.textContent = item.date;
     showA.href = item.href;
