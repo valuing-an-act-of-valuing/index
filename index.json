@@ -2,7 +2,7 @@
   "title" : "大切にすることを大切にするための場所",
   "author" : "∧°┐",
   "description" : "this is a space for valuing an act of valuing",
-  "src" : "index/icon.png",
+  "src" : "/value/index/icon.png",
   "value" : [
     {"appreciate" : "thing"},
     {"appreciate" : "object"},
