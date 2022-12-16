@@ -48,12 +48,12 @@ function indexHeader(obj) {
 
   const ogIMG = document.createElement( "meta" );
   ogIMG.setAttribute("property", "og:image");
-  ogIMG.setAttribute("content", `${location.href}${obj.img}`);
+  ogIMG.setAttribute("content", `${location.protocol}//${location.hostname}${obj.img}`);
   head.appendChild(ogIMG);
 
   const twitterIMG = document.createElement( "meta" );
   twitterIMG.setAttribute("name", "twitter:image");
-  twitterIMG.setAttribute("content", `${location.href}${obj.img}`);
+  twitterIMG.setAttribute("content", `${location.protocol}//${location.hostname}${obj.img}`);
   head.appendChild(twitterIMG);
 }
 
