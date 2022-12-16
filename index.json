@@ -3,6 +3,12 @@
   "author" : "∧°┐",
   "description" : "this is a space for valuing an act of valuing",
   "src" : "index/icon.png",
+  "value" : [
+    {"appreciate" : "thing"},
+    {"appreciate" : "object"},
+    {"appreciate" : "people"},
+    {"appreciate" : "valuing"}
+  ],
   "org" : [
     {
       "date" : "pe.hu",

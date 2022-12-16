@@ -33,34 +33,11 @@
       <li>
         <input type="radio" name="appreciate" value="topic" id="topic">
         <label for="topic" class="label">Topic</label>
-      </li>
-    <!--
-      <li>
-        <input type="radio" name="appreciate" value="show" id="show">
-        <label for="show" class="label">Show</label>
-      </li>
-    -->
       <li>
         <input type="radio" name="appreciate" value="gallery" id="gallery">
         <label for="gallery" class="label">Gallery</label>
       </li>
       <hr />
-      <li>
-        <input type="radio" name="appreciate" value="thing" id="thing">
-        <label for="thing" class="label">Thing</label>
-      </li>
-      <li>
-        <input type="radio" name="appreciate" value="object" id="object">
-        <label for="object" class="label">Object</label>
-      </li>
-      <li>
-        <input type="radio" name="appreciate" value="people" id="people">
-        <label for="people" class="label">People</label>
-      </li>
-      <li>
-        <input type="radio" name="appreciate" value="valuing" id="valuing">
-        <label for="valuing" class="label">Valuing</label>
-      </li>
     </ul>
   </form>
 
@@ -72,14 +49,14 @@
         <a href="/value/online/"></a>
       </li>
     </ul>
-
     <ul class="random"></ul>
-    <script src="topic.js"></script>
-    <script src="index.js"></script>
   </div>
+  <script src="topic.js"></script>
+  <script src="index.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="org.js"></script>
+
   <script type="text/javascript">
   function shuffleContent(container) {
     var content = container.find("> *");
@@ -89,7 +66,7 @@
     });
   }
   $(function() {
-    shuffleContent($(".random"));
+    shuffleContent($("#org"));
   });
   </script>
 

@@ -7,6 +7,7 @@ async function populate() {
 
   const indexIndex = JSON.parse(indexJson);
   indexHeader(indexIndex);
+  valueObject(indexIndex);
   indexObject(indexIndex);
 }
 
@@ -55,6 +56,28 @@ function indexHeader(obj) {
   twitterIMG.setAttribute("name", "twitter:image");
   twitterIMG.setAttribute("content", `${location.href}${obj.src}`);
   head.appendChild(twitterIMG);
+}
+
+function valueObject(obj) {
+  const valueIndex = document.querySelector('#click');
+  const valueORG = obj.value;
+
+  for (const value of valueORG) {
+    const valueLi = document.createElement('li');
+    const valueInput = document.createElement('input');
+    valueInput.setAttribute("type", "radio");
+    valueInput.setAttribute("name", "appreciate");
+    valueInput.setAttribute("value", value.appreciate);
+    valueInput.setAttribute("id", value.appreciate);
+    const valueLabel = document.createElement('label');
+    valueLabel.setAttribute("for", value.appreciate);
+    valueLabel.textContent = value.appreciate;
+
+    valueLi.appendChild(valueInput);
+    valueLi.appendChild(valueLabel);
+
+    valueIndex.appendChild(valueLi);
+  }
 }
 
 function indexObject(obj) {
