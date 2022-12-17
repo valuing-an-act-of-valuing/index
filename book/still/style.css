@@ -47,40 +47,40 @@
   font-family: var(--sub-font);
 }
 
-.mousedragscrollable .title {
+.mousedragscrollable .tt {
   letter-spacing: 0.1rem;
 }
 
-.mousedragscrollable .title i {
+.mousedragscrollable .tt i {
   letter-spacing: 0.125rem;
 }
 
-.mousedragscrollable .title b {
+.mousedragscrollable .tt b {
   font-weight: 900;
 }
 
-.mousedragscrollable .title u {
+.mousedragscrollable .tt u {
   font-weight: 600;
 }
 
 @media screen and (max-width: 750px) {
 
-  .mousedragscrollable .title {
+  .mousedragscrollable .tt {
     letter-spacing:0.125vw;
   }
 
-  .mousedragscrollable .title i {
+  .mousedragscrollable .tt i {
     letter-spacing:0.2vw;
   }
 }
 
 @media screen and (max-width: 550px) {
 
-  .mousedragscrollable .title {
+  .mousedragscrollable .tt {
     letter-spacing:0.25vw;
   }
 
-  .mousedragscrollable .title i {
+  .mousedragscrollable .tt i {
     letter-spacing:0.45vw;
   }
 }
