@@ -41,8 +41,8 @@ function indexValue(obj) {
   const coverImage = document.querySelector('#image');
   ogIMG.setAttribute("property", "og:image");
   twitterIMG.setAttribute("name", "twitter:image");
-  ogIMG.setAttribute("content", `${location.protocol}//${location.hostname}${obj.src}`);
-  twitterIMG.setAttribute("content", `${location.protocol}//${location.hostname}${obj.src}`);
+  ogIMG.setAttribute("content", `${location.origin}${obj.src}`);
+  twitterIMG.setAttribute("content", `${location.origin}${obj.src}`);
   coverImage.style.display = obj.img;
   coverImage.style.backgroundImage = `url(${obj.src})`;
   head.appendChild(ogIMG);
