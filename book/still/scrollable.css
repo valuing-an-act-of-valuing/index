@@ -44,25 +44,20 @@ body::-webkit-scrollbar,
 }
 
 .mousedragscrollable {
+  display: flex;
   list-style: none;
-  white-space: nowrap;
   overflow: auto;
   height: 100vh;
   max-height: -webkit-fill-available;
 }
 
-.mousedragscrollable>* {
-  display: inline-block;
-}
-
 .mousedragscrollable li {
   background-repeat: no-repeat;
-  width: 90%;
+  min-width: 90%;
   height: 99%;
   max-width: 750px;
   overflow: auto;
   position: relative;
-  white-space: normal;
 }
 
 .mousedragscrollable .date {
@@ -122,16 +117,17 @@ body::-webkit-scrollbar,
   display: inline-block;
   padding: 0 0.5rem;
   margin: 0.25rem;
+  word-break: break-all;
 }
 
 
-.mousedragscrollable .title,
+.mousedragscrollable .tt,
 .mousedragscrollable .top,
 .mousedragscrollable .bottom {
   margin: 0;
 }
 
-.mousedragscrollable .title {
+.mousedragscrollable .tt {
   font-family: var(--main-font);
   padding: 2.5rem 5rem 2.5rem 5rem;
 }
@@ -181,7 +177,7 @@ body::-webkit-scrollbar,
     margin: 0.5vw;
   }
 
-  .mousedragscrollable .title {
+  .mousedragscrollable .tt {
     padding: 5vw 15vw 5vw 7.5vw;
   }
 
@@ -218,7 +214,7 @@ body::-webkit-scrollbar,
     font-size: 3vw;
   }
 
-  .mousedragscrollable .title {
+  .mousedragscrollable .tt {
     padding: 5vw 12.5vw 2.5vw 5vw;
   }
 
