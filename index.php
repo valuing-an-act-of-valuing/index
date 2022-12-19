@@ -66,7 +66,7 @@
     });
   }
   $(function() {
-    shuffleContent($("#org"));
+    shuffleContent($(".random"));
   });
   </script>
 
