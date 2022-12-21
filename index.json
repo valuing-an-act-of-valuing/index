@@ -29,15 +29,6 @@
       "src" : "000.png"
     },
     {
-      "date" : "In The Wind",
-      "name" : "Kazuma Sasajima",
-      "appreciate" : "thing",
-      "url" : "/inthewind/",
-      "info" : "",
-      "img" : "block",
-      "src" : "image.jpg"
-    },
-    {
       "date" : "That Smell",
       "name" : "Kazuma Sasajima",
       "appreciate" : "people",
@@ -45,6 +36,15 @@
       "info" : "大切にすることを大切にするための本 未収録エッセイ",
       "img" : "none",
       "src" : ""
+    },
+    {
+      "date" : "In The Wind",
+      "name" : "Kazuma Sasajima",
+      "appreciate" : "thing",
+      "url" : "/inthewind/",
+      "info" : "",
+      "img" : "block",
+      "src" : "image.jpg"
     },
     {
       "date" : "Galaxy",
