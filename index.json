@@ -11,13 +11,31 @@
   ],
   "org" : [
     {
-      "date" : "pe.hu",
-      "name" : "ささじまかずま",
-      "appreciate" : "valuing",
-      "url" : "/motto/",
-      "info" : "P E H U is | MOTTO",
+      "date" : "Galaxy",
+      "name" : "Kazuma Sasajima",
+      "appreciate" : "object",
+      "url" : "/galaxy/",
+      "info" : "こ・こ・ろ・ゆたかにすごすとき、よりおしゃれに、より個性的に……",
       "img" : "block",
-      "src" : "image.jpeg"
+      "src" : "000.png"
+    },
+    {
+      "date" : "In The Wind",
+      "name" : "Kazuma Sasajima",
+      "appreciate" : "thing",
+      "url" : "/inthewind/",
+      "info" : null,
+      "img" : "block",
+      "src" : "image.jpg"
+    },
+    {
+      "date" : "That Smell",
+      "name" : "Kazuma Sasajima",
+      "appreciate" : "people",
+      "url" : "/thesmell/",
+      "info" : "大切にすることを大切にするための本 未収録エッセイ",
+      "img" : "none",
+      "src" : null
     },
     {
       "date" : "Sign",
@@ -29,31 +47,13 @@
       "src" : "000.png"
     },
     {
-      "date" : "That Smell",
-      "name" : "Kazuma Sasajima",
-      "appreciate" : "people",
-      "url" : "/thesmell/",
-      "info" : "大切にすることを大切にするための本 未収録エッセイ",
-      "img" : "none",
-      "src" : ""
-    },
-    {
-      "date" : "In The Wind",
-      "name" : "Kazuma Sasajima",
-      "appreciate" : "thing",
-      "url" : "/inthewind/",
-      "info" : "",
+      "date" : "pe.hu",
+      "name" : "ささじまかずま",
+      "appreciate" : "valuing",
+      "url" : "/motto/",
+      "info" : "P E H U is | MOTTO",
       "img" : "block",
-      "src" : "image.jpg"
-    },
-    {
-      "date" : "Galaxy",
-      "name" : "Kazuma Sasajima",
-      "appreciate" : "object",
-      "url" : "/galaxy/",
-      "info" : "こ・こ・ろ・ゆたかにすごすとき、よりおしゃれに、より個性的に……",
-      "img" : "block",
-      "src" : "000.png"
+      "src" : "image.jpeg"
     }
   ]
 }

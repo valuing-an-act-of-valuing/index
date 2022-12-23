@@ -177,11 +177,11 @@ input[type="radio"] {
 
 #org ul {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
   display: -webkit-flex;
-  -webkit-justify-content: flex-start;
+  flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
 }
 
 #org li {

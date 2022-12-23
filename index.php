@@ -33,56 +33,62 @@
       <li>
         <input type="radio" name="appreciate" value="topic" id="topic">
         <label for="topic" class="label">Topic</label>
-      <li>
-        <input type="radio" name="appreciate" value="gallery" id="gallery">
-        <label for="gallery" class="label">Gallery</label>
-      </li>
-      <hr />
-    </ul>
-  </form>
+        <li>
+          <input type="radio" name="appreciate" value="gallery" id="gallery">
+          <label for="gallery" class="label">Gallery</label>
+        </li>
+        <hr />
+      </ul>
+    </form>
 
-  <div id="org">
-    <ul>
-      <li class="list_item" data-appreciate="topic">
-        <p>あなたの大切なものは何ですか？</p>
-        <span>this is a entry form for valuing an act of valuing</span>
-        <a href="/value/online/"></a>
-      </li>
-    </ul>
-    <ul class="random"></ul>
-  </div>
-  <script src="topic.js"></script>
-  <script src="index.js"></script>
+    <div id="org">
+      <ul>
+        <li class="list_item" data-appreciate="topic">
+          <p>あなたの大切なものは何ですか？</p>
+          <span>this is a entry form for valuing an act of valuing</span>
+          <a href="/value/online/"></a>
+        </li>
+      </ul>
+      <ul class="random"></ul>
+    </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="org.js"></script>
-
-  <script type="text/javascript">
-  function shuffleContent(container) {
-    var content = container.find("> *");
-    var total = content.length;
-    content.each(function() {
-      content.eq(Math.floor(Math.random() * total)).prependTo(container);
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="org.js"></script>
+    <script src="topic.js"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      var arr = [];
+      $(".random li").each(function() {
+        arr.push($(this).html());
+      });
+      arr.sort(function() {
+        return Math.random() - Math.random();
+      });
+      $(".random").empty();
+      for (i = 0; i < arr.length; i++) {
+        $(".random").append('<li>' + arr[i] + '</li>');
+      }
     });
-  }
-  $(function() {
-    shuffleContent($(".random"));
-  });
-  </script>
 
-  <a id="update" href="/value/index/">
-    <?php
-    $mod = filemtime("index.json");
-    date_default_timezone_set('Asia/Tokyo');
-    print "" . date("Y-m-d H:i:s", $mod);
-    ?>
-    更新
-  </a>
+    function PageLoad() {
+      var cols = document.querySelectorAll('.random li');
+      [].forEach.call(cols, addDnDHandlers);
+    }
+    </script>
+    <a id="update" href="/value/index/">
+      <?php
+      $mod = filemtime("index.json");
+      date_default_timezone_set('Asia/Tokyo');
+      print "" . date("Y-m-d H:i:s", $mod);
+      ?>
+      更新
+    </a>
 
-  <div id="credit" class="back">
-    Presented by
-    <a href="#" class="pehu">∧°┐</a>
-  </div>
-</body>
+    <div id="credit">
+      Presented by
+      <a href="#" class="pehu">∧°┐</a>
+    </div>
+  </body>
 
-</html>
+  </html>

@@ -30,6 +30,7 @@
   clear: both;
   display: block;
   width: 100%;
+  padding: 0 1.25rem;
 }
 
 #topic div .tt,
@@ -68,13 +69,4 @@
   max-height: 10rem;
   pointer-events: none;
   user-select: none;
-  filter: blur(0.5rem);
-  -webkit-filter: blur(0.5rem);
-  transition: all 2500ms ease;
-}
-
-#topic div:hover img {
-  filter: blur(0);
-  -webkit-filter: blur(0);
-  transition: all 1000ms ease;
 }
