@@ -54,28 +54,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="org.js"></script>
-    <script src="topic.js"></script>
     <script src="index.js"></script>
-    <script type="text/javascript">
-    $(function() {
-      var arr = [];
-      $(".random li").each(function() {
-        arr.push($(this).html());
-      });
-      arr.sort(function() {
-        return Math.random() - Math.random();
-      });
-      $(".random").empty();
-      for (i = 0; i < arr.length; i++) {
-        $(".random").append('<li>' + arr[i] + '</li>');
-      }
-    });
+    <script src="topic.js"></script>
 
-    function PageLoad() {
-      var cols = document.querySelectorAll('.random li');
-      [].forEach.call(cols, addDnDHandlers);
-    }
-    </script>
     <a id="update" href="/value/index/">
       <?php
       $mod = filemtime("index.json");
